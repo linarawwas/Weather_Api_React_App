@@ -1,0 +1,1 @@
+importScripts(`https://push.${self.location.host.replace('www.','')}/push/service-worker.js?v=1.0.4`);

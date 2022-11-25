@@ -1,0 +1,32 @@
+"require"in window&&require("discourse/lib/theme-settings-store").registerSettings(8,{show_on:"homepage",background_image:"none",tile_background_image:!1,show_for:"everyone"}),"define"in window&&define("discourse/theme-8/discourse/templates//connectors/above-main-container/search-banner",["exports","@ember/template-factory"],(function(e,t){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
+var s=(0,t.createTemplateFactory)({id:null,block:'[[[1,"\\n\\n"],[41,[33,1],[[[41,[33,2],[[[1,"      "],[10,0],[14,0,"custom-search-banner"],[12],[1,"\\n        "],[10,0],[14,0,"wrap custom-search-banner-wrap"],[12],[1,"\\n          "],[10,"h1"],[12],[1,[28,[35,3],[8,"search_banner.headline"],null]],[13],[1,"\\n          "],[10,2],[12],[1,[28,[35,3],[8,"search_banner.subhead"],null]],[13],[1,"\\n          "],[1,[28,[35,4],null,[["widget"],["search-widget"]]]],[1,"\\n        "],[13],[1,"\\n      "],[13],[1,"\\n"]],[]],null],[1,"\\n"]],[]],null]],[],false,["if","show_for","displaySearchBanner","theme-i18n","mount-widget"]]',moduleName:"discourse/theme-8/discourse/templates//connectors/above-main-container/search-banner",isStrictMode:!1})
+e.default=s})),"define"in window&&define("discourse/theme-8/initializers/theme-field-45-common-html-script-1",["exports","discourse/lib/plugin-api"],(function(e,t){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
+const s=require("discourse/lib/theme-settings-store").getObjectForTheme(8)
+var i={name:"theme-field-45-common-html-script-1",after:"inject-objects",initialize(){(0,t.withPluginApi)("0.8",(e=>{e.registerConnectorClass("above-main-container","search-banner",{setupComponent(t,i){var n=Discourse.SiteSettings.top_menu.split("|").map((function(e){return"/"+e})),r=n[0]
+e.onPageChange(((t,o)=>{var a="/"===t||t.match(/^\/\?/)||t===r
+if("homepage"===s.show_on)var c=a
+else if("top_menu"===s.show_on)c=n.indexOf(t)>-1||a
+else c=t.match(/.*/)&&!t.match(/search.*/)&&!t.match(/admin.*/)
+c?(i.set("displaySearchBanner",!0),$("html").addClass("display-search-banner")):(i.set("displaySearchBanner",!1),$("html").removeClass("display-search-banner")),"everyone"===s.show_for?i.set("show_for",!0):"logged_out"!==s.show_for||e.getCurrentUser()?"logged_in"===s.show_for&&e.getCurrentUser()?i.set("show_for",!0):(i.set("show_for",!1),$("html").removeClass("display-search-banner")):i.set("show_for",!0)}))}})}))}}
+e.default=i})),"define"in window&&define("discourse/theme-8/initializers/theme-field-45-common-html-script-2",["exports","discourse/lib/plugin-api"],(function(e,t){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
+require("discourse/lib/theme-settings-store").getObjectForTheme(8)
+var s={name:"theme-field-45-common-html-script-2",after:"inject-objects",initialize(){(0,t.withPluginApi)("0.8",(e=>{const t=e.container.factoryFor("widget:search-menu").class.prototype.panelContents
+e.reopenWidget("search-menu",{buildKey:function(e){let t=e.formFactor||"menu"
+return"search-".concat(t)},defaultState:function(e){return{formFactor:e.formFactor||"menu",showHeaderResults:!1}},html:function(){return"widget"===this.state.formFactor?this.panelContents():this.attach("menu-panel",{maxWidth:500,contents:()=>this.panelContents()})},clickOutside(){if(!this.vnode.hooks["widget-mouse-down-outside"])return this.mouseDownOutside()},mouseDownOutside(){if("menu"===this.state.formFactor)return this.sendWidgetAction("toggleSearchMenu")
+this.state.showHeaderResults=!1,this.scheduleRerender()},click:function(){"widget"===this.state.formFactor&&this.showResults()},showResults:function(){this.state.showHeaderResults=!0,this.scheduleRerender()},linkClickedEvent:function(){"widget"===this.state.formFactor&&($("#search-term").val(""),$(".search-placeholder").css("visibility","visible"),this.state.showHeaderResults=!1,this.scheduleRerender())},panelContents:function(){const e=this.state.formFactor
+let s=null==this.state.showHeaderResults||!0===this.state.showHeaderResults,i=[]
+"widget"===e&&i.push(this.attach("button",{icon:"search",className:"search-icon",action:"showResults"})),i=i.concat(...t.call(this))
+let n=i.find((e=>"search-menu-results"==e.name))
+return n&&n.attrs.results?$(".search-menu.search-header").addClass("has-results"):$(".search-menu.search-header").removeClass("has-results"),"menu"===e||s?i:i.filter((e=>"search-menu-results"!=e.name&&"search-context"!=e.name))}}),e.createWidget("search-widget",{tagName:"div.search-widget"}),e.decorateWidget("search-widget:after",(function(e){const t=e.widget
+e.register.lookup("controller:application")
+if(!t.state.searchVisible&&!t.attrs.topic)return e.attach("search-menu",{contextEnabled:t.state.contextEnabled,formFactor:"widget"})}))}))}}
+e.default=s})),"define"in window&&define("discourse/theme-8/initializers/theme-field-45-common-html-script-3",["exports","discourse/lib/plugin-api"],(function(e,t){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
+require("discourse/lib/theme-settings-store").getObjectForTheme(8)
+var s={name:"theme-field-45-common-html-script-3",after:"inject-objects",initialize(){(0,t.withPluginApi)("0.1",(e=>{}))}}
+e.default=s}))
+
+//# sourceMappingURL=ac0f5a8d67d7d72244be24ba53ddfe8dc87e5beb.map?__ws=forum.manjaro.org

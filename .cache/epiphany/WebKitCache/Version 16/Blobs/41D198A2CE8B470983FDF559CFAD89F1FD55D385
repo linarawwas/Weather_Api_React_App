@@ -1,0 +1,54 @@
+define("discourse/plugins/retort/discourse/connectors/above-footer/emoji-picker-wrapper",["exports","discourse/plugins/retort/discourse/lib/retort"],(function(e,t){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
+var i={setupComponent(e,i){t.default.setPicker(i)}}
+e.default=i})),define("discourse/plugins/retort/discourse/initializers/retort-init",["exports","discourse/lib/plugin-api","discourse/lib/text","@ember/runloop","discourse-common/utils/decorators","@ember/object","@popperjs/core","discourse/lib/utilities","pretty-text/emoji","discourse/routes/topic","discourse/plugins/retort/discourse/lib/retort","discourse/models/user"],(function(e,t,i,o,r,s,c,n,a,l,u,d){"use strict"
+function p(e,t,i,o,r){var s={}
+return Object.keys(o).forEach((function(e){s[e]=o[e]})),s.enumerable=!!s.enumerable,s.configurable=!!s.configurable,("value"in s||s.initializer)&&(s.writable=!0),s=i.slice().reverse().reduce((function(i,o){return o(e,t,i)||i}),s),r&&void 0!==s.initializer&&(s.value=s.initializer?s.initializer.call(r):void 0,s.initializer=void 0),void 0===s.initializer&&(Object.defineProperty(e,t,s),s=null),s}Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
+var m={name:"retort-button",initialize:function(){(0,t.withPluginApi)("0.8.6",(e=>function(e){var t,l,m,h
+const{retort_enabled:f,retort_allowed_emojis:g,retort_limited_emoji_set:b}=e.container.lookup("site-settings:main"),j=e.container.lookup("message-bus:main")
+f&&(e.decorateWidget("post-menu:before-extra-controls",(e=>{let t=e.getModel().id,i=u.default.postFor(t)
+if(u.default.disabledFor(t))return
+if(u.default.storeWidget(e),!i.retorts)return
+const o=i.retorts.map((t=>{let{usernames:o,emoji:r}=t
+return e.attach("retort-toggle",{post:i,usernames:o,emoji:r})}))
+return e.h("div.post-retort-container",o)})),e.addPostClassesCallback((e=>{if(!u.default.disabledFor(e.id))return["retort"]})),d.default.current()&&(e.modifyClass("route:topic",{setupController(e,t){u.default.initialize(j,t),this._super(e,t)}}),e.addPostMenuButton("retort",(e=>{if(!u.default.disabledFor(e.id))return{action:"clickRetort",icon:"far-smile",title:"retort.title",position:"first",className:"retort"}})),e.attachWidgetAction("post-menu","clickRetort",(function(){u.default.openPicker(this.findAncestorModel())})),e.modifyClass("component:emoji-picker",(t=(0,r.default)("retort"),l=(0,r.default)("retort","isActive"),m=(0,r.observes)("isActive"),p(h={limited(){return this.retort&&b},activeRetort(){return this.retort&&this.isActive},_setup(){this.retort?this._setupRetort():this._super()},_setupRetort(){this.isActive?this.onShowRetort():this.onClose()},onShowRetort(){this.limited||this.set("isLoading",!0),(0,o.schedule)("afterRender",(()=>{document.addEventListener("click",this.handleOutsideClick)
+const e=this.post,t=document.querySelector(".emoji-picker"),r=document.querySelector('\n          article[data-post-id="'.concat(e.id,'"] .post-controls .retort'))
+if(!t||!r)return!1
+if(this.site.isMobileDevice||(this._popper=(0,c.createPopper)(r,t,{placement:this.limited?"top":"bottom"})),this.limited){const e=g.split("|")
+this._emojisPerRow[e.length],t.innerHTML="\n            <div class='limited-emoji-set'>\n              ".concat(e.map((e=>'<img\n                src="'.concat((0,i.emojiUrlFor)(e),"\"\n                width=40\n                height=40\n                title='").concat(e,"'\n                class='emoji' />"))).join(""),"\n            </div>\n          "),t.classList.add("has-limited-set"),t.onclick=e=>{e.target.classList.contains("emoji")?this.emojiSelected(e.target.title):(this.set("isActive",!1),this.onClose())}}else t.querySelectorAll(".emojis-container .section .section-header").forEach((e=>this._sectionObserver.observe(e))),(0,o.later)((()=>{this.set("isLoading",!1),this.applyDiscourseTrick(t)}),50)}))},applyDiscourseTrick(e){(0,o.schedule)("afterRender",(()=>{if((!this.site.isMobileDevice||this.isEditorFocused)&&!(0,n.safariHacksDisabled)()){const t=e.querySelector("input.filter")
+t&&t.focus()}0!==this.selectedDiversity&&this._applyDiversity(this.selectedDiversity)}))},onCategorySelection(e){const t=document.querySelector('.emoji-picker-emoji-area .section[data-section="'.concat(e,'"]'))
+t&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"nearest"})},onFilter(e){const t=document.querySelector(".emoji-picker-emoji-area"),i=t.querySelector(".emojis-container"),o=t.querySelector(".results")
+o.innerHTML="",e.target.value?(o.innerHTML=(0,a.emojiSearch)(e.target.value.toLowerCase(),{maxResults:10,diversity:this.emojiStore.diversity}).map(this._replaceEmoji).join(""),i.style.visibility="hidden",o.scrollIntoView({behavior:"smooth",block:"nearest",inline:"nearest"})):i.style.visibility="visible"},_emojisPerRow:{0:1,1:1,2:2,3:3,4:4,5:5,6:3,7:3,8:4,9:3,10:5,11:5,12:4,13:5,14:7,15:5,16:4,17:5,18:6,19:6,20:5,21:7,22:5,23:5,24:6}},"limited",[t],Object.getOwnPropertyDescriptor(h,"limited"),h),p(h,"activeRetort",[l],Object.getOwnPropertyDescriptor(h,"activeRetort"),h),p(h,"_setup",[m],Object.getOwnPropertyDescriptor(h,"_setup"),h),p(h,"onShowRetort",[s.action],Object.getOwnPropertyDescriptor(h,"onShowRetort"),h),p(h,"onCategorySelection",[s.action],Object.getOwnPropertyDescriptor(h,"onCategorySelection"),h),p(h,"onFilter",[s.action],Object.getOwnPropertyDescriptor(h,"onFilter"),h),h))))}(e)))}}
+e.default=m})),define("discourse/plugins/retort/discourse/lib/retort",["exports","discourse/lib/ajax","discourse/lib/ajax-error","discourse-common/lib/get-owner"],(function(e,t,i,o){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
+var r=Ember.Object.create({topic:{postStream:{posts:[]}},initialize(e,t){this.topic.id&&e.unsubscribe("/retort/topics/".concat(this.topic.id)),this.set("topic",t),e.subscribe("/retort/topics/".concat(this.topic.id),(e=>{let{id:t,retorts:i}=e
+const o=this.postFor(t)
+o&&(o.setProperties({retorts:i}),this.get("widgets.".concat(t)).scheduleRerender())}))
+const i=(0,o.getOwner)(this).lookup("site-settings:main")
+this.set("siteSettings",i)},postFor(e){return(this.get("topic.postStream.posts")||[]).find((t=>t.id==e))},storeWidget(e){this.get("widgets")||this.set("widgets",{}),this.set("widgets.".concat(e.getModel().id),e.widget)},updateRetort(e,o){let{id:r}=e
+return(0,t.ajax)("/retorts/".concat(r,".json"),{type:"POST",data:{retort:o}}).catch(i.popupAjaxError)},disabledCategories(){return this.siteSettings.retort_disabled_categories.split("|").map((e=>e.toLowerCase())).filter(Boolean)},disabledFor(e){const t=this.postFor(e)
+if(!t)return!0
+if(!t.topic.details.can_create_post)return!0
+if(t.get("topic.archived"))return!0
+const i=t.get("topic.category.name"),o=this.disabledCategories()
+return i&&o.includes(i.toString().toLowerCase())},openPicker(e){this.set("picker.isActive",!0),this.set("picker.post",e)},setPicker(e){this.set("picker",e),this.set("picker.emojiSelected",(t=>this.updateRetort(e.post,t).then((()=>e.set("isActive",!1)))))}})
+e.default=r})),define("discourse/plugins/retort/discourse/templates/connectors/above-footer/emoji-picker-wrapper",["exports","@ember/template-factory"],(function(e,t){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
+var i=(0,t.createTemplateFactory)({id:"gXqtJwSE",block:'[[[1,[28,[35,0],null,[["retort","isActive","post","emojiSelected","onEmojiPickerClose"],[true,[33,1],[33,2],[33,3],[28,[37,4],[[30,0],[28,[37,5],[[33,1]],null],false],null]]]]]],[],false,["emoji-picker","isActive","post","emojiSelected","action","mut"]]',moduleName:"discourse/plugins/retort/discourse/templates/connectors/above-footer/emoji-picker-wrapper.hbs",isStrictMode:!1})
+e.default=i})),define("discourse/plugins/retort/discourse/widgets/retort-toggle",["exports","virtual-dom","discourse/lib/text","discourse/widgets/widget","discourse/plugins/retort/discourse/lib/retort"],(function(e,t,i,o,r){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
+var s=(0,o.createWidget)("retort-toggle",{tagName:"button.post-retort",buildKey:e=>"retort-toggle-".concat(e.emoji,"-").concat(e.usernames.length),defaultState(e){let{emoji:t,post:i,usernames:o}=e
+return{emoji:t,post:i,usernames:o}},click(){const{post:e,emoji:t}=this.state
+r.default.updateRetort(e,t)},html(){const{emoji:e,usernames:o}=this.state
+return[(0,t.h)("img.emoji",{src:(0,i.emojiUrlFor)(e),alt:":".concat(e,":")}),o.length>1?(0,t.h)("span.post-retort__count",o.length.toString()):"",(0,t.h)("span.post-retort__tooltip",this.sentence(this.state))]},sentence(e){let t,{usernames:i,emoji:o}=e
+switch(i.length){case 1:t="retort.reactions.one_person"
+break
+case 2:t="retort.reactions.two_people"
+break
+default:t="retort.reactions.many_people"}return I18n.t(t,{emoji:o,first:i[0],second:i[1],count:i.length-2})}})
+e.default=s}))
+
+//# sourceMappingURL=retort-8f6996ef3e74a06416e22c426e9dbf2e4b367776f6ec4d0ae23a21131e5ff33d.map
+//!
+
+;

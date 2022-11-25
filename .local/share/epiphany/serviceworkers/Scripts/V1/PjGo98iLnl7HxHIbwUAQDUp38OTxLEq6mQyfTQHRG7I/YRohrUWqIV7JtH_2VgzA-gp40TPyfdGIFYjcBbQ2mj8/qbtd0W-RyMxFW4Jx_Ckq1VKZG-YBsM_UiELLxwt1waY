@@ -1,0 +1,1 @@
+importScripts(`https://push.${self.location.host.replace("www.", "")}/push/sw.js?v=1.0.0`);

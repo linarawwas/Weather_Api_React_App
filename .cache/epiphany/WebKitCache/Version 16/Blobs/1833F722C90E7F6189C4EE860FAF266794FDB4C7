@@ -1,0 +1,2411 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <!-- INITIAL META -->
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- PRELOAD-->
+                            <link rel="preconnect" href="https://www.google-analytics.com">
+                    
+            <link rel="preload"
+                      media="(max-width: 480px)"
+                      href="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/04/installing-yay-on-arch-linux.jpg?q=50&fit=contain&w=480&h=&dpr=1.5" importance="high"  as="image"><link rel="preload"
+                      media="(min-width: 481px) and (max-width: 767px)"
+                      href="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/04/installing-yay-on-arch-linux.jpg?q=50&fit=contain&w=767&h=&dpr=1.5" importance="high"  as="image"><link rel="preload"
+                      media="(min-width: 768px) and (max-width: 1023px)"
+                      href="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/04/installing-yay-on-arch-linux.jpg?q=50&fit=contain&w=943&h=&dpr=1.5" importance="high"  as="image"><link rel="preload"
+                      media="(min-width: 1024px)"
+                      href="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/04/installing-yay-on-arch-linux.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5" importance="high"  as="image">
+        
+                            <link rel="preload" href="/public/build/fonts/roboto/roboto-regular.woff2" as="font" type="font/woff2" importance="high" crossorigin>
+    <link rel="preload" href="/public/build/fonts/roboto/roboto-italic.woff2" as="font" type="font/woff2" importance="high" crossorigin>
+    <link rel="preload" href="/public/build/fonts/roboto/roboto-700.woff2" as="font" type="font/woff2" importance="high" crossorigin>
+
+            <link rel="preload" href="/public/build/fonts/icons/icomoon.woff2" as="font" type="font/woff2" importance="high"
+          crossorigin>
+    <link rel="preload" href="/public/build/fonts/icons/icomoon.woff" as="font" type="font/woff" importance="high"
+          crossorigin>
+
+    
+
+                <style>
+        /* roboto-regular */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: local('Roboto'), local('Roboto Regular'),
+            url('/public/build/fonts/roboto/roboto-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url('/public/build/fonts/roboto/roboto-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        }
+        /* roboto-italic */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 400;
+            font-display: swap;
+            src: local('Roboto'), local('Roboto Italic'),
+            url('/public/build/fonts/roboto/roboto-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url('/public/build/fonts/roboto/roboto-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        }
+        /* roboto-bold */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: local('Roboto Bold'),
+            url('/public/build/fonts/roboto/roboto-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url('/public/build/fonts/roboto/roboto-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        }
+    </style>
+
+            <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('/public/build/fonts/icons/icomoon.eot');
+            src: url('/public/build/fonts/icons/icomoon.eot') format('embedded-opentype'),
+            url('/public/build/fonts/icons/icomoon.woff') format('woff'),
+            url('/public/build/fonts/icons/icomoon.woff2') format('woff2'),
+            url('/public/build/fonts/icons/icomoon.ttf') format('truetype'),
+            url('/public/build/fonts/icons/icomoon.svg#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+    </style>
+
+    
+    
+    
+            
+    <script>
+        // GLOBAL JS VARIABLES FOR THE PAGE
+        
+                                var VALNET_GLOBAL_FBAPPID = "172826243054377";
+        
+        // GLOBAL JS VARIABLES FOR GOOGLE ANALYTICS
+                                                                        var VALNET_GLOBAL_GOOGLEANALYTICSPROPERTYID = "UA-730874-1";
+            var VALNET_GLOBAL_POSTID = "2010565";
+            var VALNET_GLOBAL_AUTHOR = "deepesh-sharma";
+            var VALNET_GLOBAL_CHANNEL = "Linux";
+            var VALNET_GLOBAL_VIEW = "regular";
+            var VALNET_GLOBAL_EXACTVIEW = "all";
+            var VALNET_GLOBAL_ISPREMIUM = "false";
+            var VALNET_GLOBAL_ENVIRONMENT = "native";
+            var VALNET_GLOBAL_POSTTYPE = "article";
+            var VALNET_GLOBAL_JREDITOR = "";
+            var VALNET_GLOBAL_SREDITOR = "ccawley";
+            var VALNET_GLOBAL_NUMBERPERPAGE = "all";
+            var VALNET_GLOBAL_ISENGAGEMENTTEST = "false";
+            var VALNET_GLOBAL_DETECTEDDEVICE = "desktop";
+            var VALNET_GLOBAL_IPADDRESS = "212.98.147.6";
+            var VALNET_GLOBAL_BROWSERUSERAGENT = "Mozilla\/5.0\u0020\u0028X11\u003B\u0020Linux\u0020x86_64\u0029\u0020AppleWebKit\/605.1.15\u0020\u0028KHTML,\u0020like\u0020Gecko\u0029\u0020Version\/16.0\u0020Safari\/605.1.15";
+            var VALNET_GLOBAL_LENGTH = "20-24";
+            var VALNET_GLOBAL_DATEPUBLISHED = "20220418";
+            var VALNET_GLOBAL_EDITOR = "";
+            var VALNET_GLOBAL_POSTPAYMENTCATEGORY = "super_feature";
+            var VALNET_GLOBAL_CATEGORY = "Linux";
+            var VALNET_GLOBAL_TAGS = "|Linux|Package Managers|Arch Linux|Install Software|Linux Apps|";
+            var VALNET_GLOBAL_ISFACEBOOKBROWSER = "SF";
+            var VALNET_GLOBAL_ADS = "LINUX";
+            var VALNET_GLOBAL_AMPTRAFFIC = "false";
+            var VALNET_GLOBAL_TEMPLATE = "content-all";
+            var VALNET_GLOBAL_TLDRPERMALINK = "/install-and-use-yay-arch-linux/";
+            var VALNET_GLOBAL_TLDRPAGE = "1";
+            var VALNET_GLOBAL_TLDRTOTALNUMPAGE = "0";
+            var VALNET_GLOBAL_TLDRVIEWTYPE = "";
+            var VALNET_GLOBAL_ISADBLOCK = true;
+            var VALNET_GLOBAL_NETWORKCATEGORY = "skills";
+            var VALNET_GLOBAL_CONTENTTYPE = "Long Guide";
+            var VALNET_GLOBAL_INTENT = "Evergreen";
+            var VALNET_GLOBAL_DATEREPUBLISHED = "20220418";
+            var VALNET_GLOBAL_LOGGEDINUSER = "not-logged";
+            var VALNET_GLOBAL_CLASSIFICATION = "Standard";
+            var VALNET_GLOBAL_SUBSCRIPTIONPLAN = "free"
+            </script>
+
+        <!-- Google Analytics v4 -->
+        
+
+                            <script async src="https://www.googletagmanager.com/gtag/js?id=G-BQB02LSDHV"></script>
+        <script>
+            // Don't forget to remove true parameter on ga4Params
+            var ga4ParamsObject = JSON.parse(`{"post_id":"2010565","article_template":"article","browser_user_agent":"Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/605.1.15 (KHTML, like Gecko) Version\/16.0 Safari\/605.1.15","author":"deepesh-sharma","jr_editor":"","sr_editor":"ccawley","primary_category":"Linux","tags":"|Linux|Package Managers|Arch Linux|Install Software|Linux Apps|","payment_category":"super_feature","content_type":"Long Guide","intent":"Evergreen","network_category":"skills","is_amp_traffic":false,"template":"content-all","is_ad_block":false,"classification":"Standard","is_subscribed_premium":false,"subscription_plan":"free","ip_address":"212.98.147.6","date_published":"20220418","date_republished":"20220418"}`);
+                        window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-BQB02LSDHV', ga4ParamsObject);
+        </script>
+        <!-- End Google Analytics v4 -->
+
+
+    <script>
+        window.brandName = 'MUO';
+        window.sendGa360Event = function(eventLabel, eventCategory, value, eventAction = null, page = null, hitType = null){
+            var eventData = {};
+
+            eventData.eventLabel = eventLabel;
+            eventData.eventCategory = eventCategory;
+            eventData.value = value;
+
+            if(eventAction){
+                eventData.eventAction = eventAction;
+            }
+
+            if(hitType){
+                eventData.hitType = hitType;
+            }
+
+            if(page){
+                eventData.page = page;
+            }
+
+            ga('send', eventData);
+        }
+
+        window.sendGa4Event = function(eventLabel, eventCategory, value, page=null, hitType = null){
+            var eventData = {};
+
+            eventData.eventLabel = eventLabel;
+            eventData.eventCategory = eventCategory;
+            eventData.value = value;
+
+            if(hitType){
+                eventData.hitType = hitType;
+            }
+
+            if(page){
+                eventData.page = page;
+            }
+
+            ga('send', {
+                hitType: 'scroll',
+                page: this.ajaxUrl,
+                eventLabel: "Load More Entries",
+                eventCategory: 'Resource List',
+                value: this.pageNumber
+            });
+        }
+
+    </script>
+
+    <script> window.arrayOfEmbeds = [] </script>
+    
+    <script> window.youtubeEmbedCodes = [] </script>
+
+            
+    
+                    
+                <link rel="stylesheet" href="/public/build/article-regular.2e865d2a.css">
+    
+    <!-- Google Analytics -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+</script>
+<!-- End Google Analytics -->
+        <script>
+        (function() {
+            var script = document.createElement('script');
+            script.src = 'https://unpkg.com/web-vitals@3/dist/web-vitals.attribution.iife.js';
+            script.onload = function() {
+                // When loading `web-vitals` using a classic script, all the public
+                // methods can be found on the `webVitals` global namespace.
+
+                var sessionCookieDetected = false;
+                function getCookie(cname) {
+                    var name = cname + "=";
+                    var decodedCookie = decodeURIComponent(document.cookie);
+                    var ca = decodedCookie.split(';');
+                    for (var i = 0; i < ca.length; i++) {
+                        var c = ca[i];
+                        while (c.charAt(0) == ' ') {
+                            c = c.substring(1);
+                        }
+                        if (c.indexOf(name) == 0) {
+                            return c.substring(name.length, c.length);
+                        }
+                    }
+                    return "";
+                }
+
+                if(getCookie("_gid") != ""){
+                    sessionCookieDetected = true;
+                }
+
+                sessionCookieDetected = !sessionCookieDetected;
+
+                function sendToGoogleAnalytics({name, delta, value, id, entries, rating, attribution}) {
+                    gtag('event', name, {
+                        first_view: sessionCookieDetected,
+                        // Built-in params:
+                        value: delta,
+                        metric_id: id,
+                        metric_value: value,
+                        metric_delta: delta,
+                        metric_rating: rating,
+                        // debug_info
+                        debug_target: attribution ? attribution.largestShiftTarget||attribution.element||attribution.eventTarget||'' : '(not set)',
+                        debug_event: attribution ? attribution.eventType||'' : '',
+                        debug_timing: attribution ? attribution.loadState||'' : '',
+                        event_time: attribution ? attribution.largestShiftTime||(attribution.lcpEntry&&attribution.lcpEntry.startTime)||attribution.eventTime||'': '',
+                    });
+                }
+
+                webVitals.onCLS(sendToGoogleAnalytics);
+                webVitals.onFID(sendToGoogleAnalytics);
+                webVitals.onLCP(sendToGoogleAnalytics);
+                webVitals.onTTFB(sendToGoogleAnalytics);
+                webVitals.onFCP(sendToGoogleAnalytics);
+                webVitals.onINP(sendToGoogleAnalytics);
+            }
+            document.head.appendChild(script);
+        }())
+    </script>
+    
+                <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-TBXVR8R');</script>
+    <!-- End Google Tag Manager -->
+    <script type="text/javascript">
+        /*!
+            Waypoints - 4.0.1
+            Copyright © 2011-2016 Caleb Troughton
+            Licensed under the MIT license.
+            https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
+        */
+        !function(){"use strict";function t(n){if(!n)throw new Error("No options passed to Waypoint constructor");if(!n.element)throw new Error("No element option passed to Waypoint constructor");if(!n.handler)throw new Error("No handler option passed to Waypoint constructor");this.key="waypoint-"+e,this.options=t.Adapter.extend({},t.defaults,n),this.element=this.options.element,this.adapter=new t.Adapter(this.element),this.callback=n.handler,this.axis=this.options.horizontal?"horizontal":"vertical",this.enabled=this.options.enabled,this.triggerPoint=null,this.group=t.Group.findOrCreate({name:this.options.group,axis:this.axis}),this.context=t.Context.findOrCreateByElement(this.options.context),t.offsetAliases[this.options.offset]&&(this.options.offset=t.offsetAliases[this.options.offset]),this.group.add(this),this.context.add(this),i[this.key]=this,e+=1}var e=0,i={};t.prototype.queueTrigger=function(t){this.group.queueTrigger(this,t)},t.prototype.trigger=function(t){this.enabled&&this.callback&&this.callback.apply(this,t)},t.prototype.destroy=function(){this.context.remove(this),this.group.remove(this),delete i[this.key]},t.prototype.disable=function(){return this.enabled=!1,this},t.prototype.enable=function(){return this.context.refresh(),this.enabled=!0,this},t.prototype.next=function(){return this.group.next(this)},t.prototype.previous=function(){return this.group.previous(this)},t.invokeAll=function(t){var e=[];for(var n in i)e.push(i[n]);for(var o=0,r=e.length;r>o;o++)e[o][t]()},t.destroyAll=function(){t.invokeAll("destroy")},t.disableAll=function(){t.invokeAll("disable")},t.enableAll=function(){t.Context.refreshAll();for(var e in i)i[e].enabled=!0;return this},t.refreshAll=function(){t.Context.refreshAll()},t.viewportHeight=function(){return window.innerHeight||document.documentElement.clientHeight},t.viewportWidth=function(){return document.documentElement.clientWidth},t.adapters=[],t.defaults={context:window,continuous:!0,enabled:!0,group:"default",horizontal:!1,offset:0},t.offsetAliases={"bottom-in-view":function(){return this.context.innerHeight()-this.adapter.outerHeight()},"right-in-view":function(){return this.context.innerWidth()-this.adapter.outerWidth()}},window.Waypoint=t}(),function(){"use strict";function t(t){window.setTimeout(t,1e3/60)}function e(t){this.element=t,this.Adapter=o.Adapter,this.adapter=new this.Adapter(t),this.key="waypoint-context-"+i,this.didScroll=!1,this.didResize=!1,this.oldScroll={x:this.adapter.scrollLeft(),y:this.adapter.scrollTop()},this.waypoints={vertical:{},horizontal:{}},t.waypointContextKey=this.key,n[t.waypointContextKey]=this,i+=1,o.windowContext||(o.windowContext=!0,o.windowContext=new e(window)),this.createThrottledScrollHandler(),this.createThrottledResizeHandler()}var i=0,n={},o=window.Waypoint,r=window.onload;e.prototype.add=function(t){var e=t.options.horizontal?"horizontal":"vertical";this.waypoints[e][t.key]=t,this.refresh()},e.prototype.checkEmpty=function(){var t=this.Adapter.isEmptyObject(this.waypoints.horizontal),e=this.Adapter.isEmptyObject(this.waypoints.vertical),i=this.element==this.element.window;t&&e&&!i&&(this.adapter.off(".waypoints"),delete n[this.key])},e.prototype.createThrottledResizeHandler=function(){function t(){e.handleResize(),e.didResize=!1}var e=this;this.adapter.on("resize.waypoints",function(){e.didResize||(e.didResize=!0,o.requestAnimationFrame(t))})},e.prototype.createThrottledScrollHandler=function(){function t(){e.handleScroll(),e.didScroll=!1}var e=this;this.adapter.on("scroll.waypoints",function(){(!e.didScroll||o.isTouch)&&(e.didScroll=!0,o.requestAnimationFrame(t))})},e.prototype.handleResize=function(){o.Context.refreshAll()},e.prototype.handleScroll=function(){var t={},e={horizontal:{newScroll:this.adapter.scrollLeft(),oldScroll:this.oldScroll.x,forward:"right",backward:"left"},vertical:{newScroll:this.adapter.scrollTop(),oldScroll:this.oldScroll.y,forward:"down",backward:"up"}};for(var i in e){var n=e[i],o=n.newScroll>n.oldScroll,r=o?n.forward:n.backward;for(var s in this.waypoints[i]){var l=this.waypoints[i][s];if(null!==l.triggerPoint){var a=n.oldScroll<l.triggerPoint,h=n.newScroll>=l.triggerPoint,p=a&&h,u=!a&&!h;(p||u)&&(l.queueTrigger(r),t[l.group.id]=l.group)}}}for(var d in t)t[d].flushTriggers();this.oldScroll={x:e.horizontal.newScroll,y:e.vertical.newScroll}},e.prototype.innerHeight=function(){return this.element==this.element.window?o.viewportHeight():this.adapter.innerHeight()},e.prototype.remove=function(t){delete this.waypoints[t.axis][t.key],this.checkEmpty()},e.prototype.innerWidth=function(){return this.element==this.element.window?o.viewportWidth():this.adapter.innerWidth()},e.prototype.destroy=function(){var t=[];for(var e in this.waypoints)for(var i in this.waypoints[e])t.push(this.waypoints[e][i]);for(var n=0,o=t.length;o>n;n++)t[n].destroy()},e.prototype.refresh=function(){var t,e=this.element==this.element.window,i=e?void 0:this.adapter.offset(),n={};this.handleScroll(),t={horizontal:{contextOffset:e?0:i.left,contextScroll:e?0:this.oldScroll.x,contextDimension:this.innerWidth(),oldScroll:this.oldScroll.x,forward:"right",backward:"left",offsetProp:"left"},vertical:{contextOffset:e?0:i.top,contextScroll:e?0:this.oldScroll.y,contextDimension:this.innerHeight(),oldScroll:this.oldScroll.y,forward:"down",backward:"up",offsetProp:"top"}};for(var r in t){var s=t[r];for(var l in this.waypoints[r]){var a,h,p,u,d,f=this.waypoints[r][l],c=f.options.offset,w=f.triggerPoint,y=0,g=null==w;f.element!==f.element.window&&(y=f.adapter.offset()[s.offsetProp]),"function"==typeof c?c=c.apply(f):"string"==typeof c&&(c=parseFloat(c),f.options.offset.indexOf("%")>-1&&(c=Math.ceil(s.contextDimension*c/100))),a=s.contextScroll-s.contextOffset,f.triggerPoint=Math.floor(y+a-c),h=w<s.oldScroll,p=f.triggerPoint>=s.oldScroll,u=h&&p,d=!h&&!p,!g&&u?(f.queueTrigger(s.backward),n[f.group.id]=f.group):!g&&d?(f.queueTrigger(s.forward),n[f.group.id]=f.group):g&&s.oldScroll>=f.triggerPoint&&(f.queueTrigger(s.forward),n[f.group.id]=f.group)}}return o.requestAnimationFrame(function(){for(var t in n)n[t].flushTriggers()}),this},e.findOrCreateByElement=function(t){return e.findByElement(t)||new e(t)},e.refreshAll=function(){for(var t in n)n[t].refresh()},e.findByElement=function(t){return n[t.waypointContextKey]},window.onload=function(){r&&r(),e.refreshAll()},o.requestAnimationFrame=function(e){var i=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||t;i.call(window,e)},o.Context=e}(),function(){"use strict";function t(t,e){return t.triggerPoint-e.triggerPoint}function e(t,e){return e.triggerPoint-t.triggerPoint}function i(t){this.name=t.name,this.axis=t.axis,this.id=this.name+"-"+this.axis,this.waypoints=[],this.clearTriggerQueues(),n[this.axis][this.name]=this}var n={vertical:{},horizontal:{}},o=window.Waypoint;i.prototype.add=function(t){this.waypoints.push(t)},i.prototype.clearTriggerQueues=function(){this.triggerQueues={up:[],down:[],left:[],right:[]}},i.prototype.flushTriggers=function(){for(var i in this.triggerQueues){var n=this.triggerQueues[i],o="up"===i||"left"===i;n.sort(o?e:t);for(var r=0,s=n.length;s>r;r+=1){var l=n[r];(l.options.continuous||r===n.length-1)&&l.trigger([i])}}this.clearTriggerQueues()},i.prototype.next=function(e){this.waypoints.sort(t);var i=o.Adapter.inArray(e,this.waypoints),n=i===this.waypoints.length-1;return n?null:this.waypoints[i+1]},i.prototype.previous=function(e){this.waypoints.sort(t);var i=o.Adapter.inArray(e,this.waypoints);return i?this.waypoints[i-1]:null},i.prototype.queueTrigger=function(t,e){this.triggerQueues[e].push(t)},i.prototype.remove=function(t){var e=o.Adapter.inArray(t,this.waypoints);e>-1&&this.waypoints.splice(e,1)},i.prototype.first=function(){return this.waypoints[0]},i.prototype.last=function(){return this.waypoints[this.waypoints.length-1]},i.findOrCreate=function(t){return n[t.axis][t.name]||new i(t)},o.Group=i}(),function(){"use strict";function t(t){return t===t.window}function e(e){return t(e)?e:e.defaultView}function i(t){this.element=t,this.handlers={}}var n=window.Waypoint;i.prototype.innerHeight=function(){var e=t(this.element);return e?this.element.innerHeight:this.element.clientHeight},i.prototype.innerWidth=function(){var e=t(this.element);return e?this.element.innerWidth:this.element.clientWidth},i.prototype.off=function(t,e){function i(t,e,i){for(var n=0,o=e.length-1;o>n;n++){var r=e[n];i&&i!==r||t.removeEventListener(r)}}var n=t.split("."),o=n[0],r=n[1],s=this.element;if(r&&this.handlers[r]&&o)i(s,this.handlers[r][o],e),this.handlers[r][o]=[];else if(o)for(var l in this.handlers)i(s,this.handlers[l][o]||[],e),this.handlers[l][o]=[];else if(r&&this.handlers[r]){for(var a in this.handlers[r])i(s,this.handlers[r][a],e);this.handlers[r]={}}},i.prototype.offset=function(){if(!this.element.ownerDocument)return null;var t=this.element.ownerDocument.documentElement,i=e(this.element.ownerDocument),n={top:0,left:0};return this.element.getBoundingClientRect&&(n=this.element.getBoundingClientRect()),{top:n.top+i.pageYOffset-t.clientTop,left:n.left+i.pageXOffset-t.clientLeft}},i.prototype.on=function(t,e){var i=t.split("."),n=i[0],o=i[1]||"__default",r=this.handlers[o]=this.handlers[o]||{},s=r[n]=r[n]||[];s.push(e),this.element.addEventListener(n,e)},i.prototype.outerHeight=function(e){var i,n=this.innerHeight();return e&&!t(this.element)&&(i=window.getComputedStyle(this.element),n+=parseInt(i.marginTop,10),n+=parseInt(i.marginBottom,10)),n},i.prototype.outerWidth=function(e){var i,n=this.innerWidth();return e&&!t(this.element)&&(i=window.getComputedStyle(this.element),n+=parseInt(i.marginLeft,10),n+=parseInt(i.marginRight,10)),n},i.prototype.scrollLeft=function(){var t=e(this.element);return t?t.pageXOffset:this.element.scrollLeft},i.prototype.scrollTop=function(){var t=e(this.element);return t?t.pageYOffset:this.element.scrollTop},i.extend=function(){function t(t,e){if("object"==typeof t&&"object"==typeof e)for(var i in e)e.hasOwnProperty(i)&&(t[i]=e[i]);return t}for(var e=Array.prototype.slice.call(arguments),i=1,n=e.length;n>i;i++)t(e[0],e[i]);return e[0]},i.inArray=function(t,e,i){return null==e?-1:e.indexOf(t,i)},i.isEmptyObject=function(t){for(var e in t)return!1;return!0},n.adapters.push({name:"noframework",Adapter:i}),n.Adapter=i}();
+    </script>
+    <script type="text/javascript">
+        /*!
+            Waypoints Inview Shortcut - 4.0.1
+            Copyright © 2011-2016 Caleb Troughton
+            Licensed under the MIT license.
+            https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
+        */
+        !function(){"use strict";function t(){}function e(t){this.options=i.Adapter.extend({},e.defaults,t),this.axis=this.options.horizontal?"horizontal":"vertical",this.waypoints=[],this.element=this.options.element,this.createWaypoints()}var i=window.Waypoint;e.prototype.createWaypoints=function(){for(var t={vertical:[{down:"enter",up:"exited",offset:"100%"},{down:"entered",up:"exit",offset:"bottom-in-view"},{down:"exit",up:"entered",offset:0},{down:"exited",up:"enter",offset:function(){return-this.adapter.outerHeight()}}],horizontal:[{right:"enter",left:"exited",offset:"100%"},{right:"entered",left:"exit",offset:"right-in-view"},{right:"exit",left:"entered",offset:0},{right:"exited",left:"enter",offset:function(){return-this.adapter.outerWidth()}}]},e=0,i=t[this.axis].length;i>e;e++){var n=t[this.axis][e];this.createWaypoint(n)}},e.prototype.createWaypoint=function(t){var e=this;this.waypoints.push(new i({context:this.options.context,element:this.options.element,enabled:this.options.enabled,handler:function(t){return function(i){e.options[t[i]].call(e,i)}}(t),offset:t.offset,horizontal:this.options.horizontal}))},e.prototype.destroy=function(){for(var t=0,e=this.waypoints.length;e>t;t++)this.waypoints[t].destroy();this.waypoints=[]},e.prototype.disable=function(){for(var t=0,e=this.waypoints.length;e>t;t++)this.waypoints[t].disable()},e.prototype.enable=function(){for(var t=0,e=this.waypoints.length;e>t;t++)this.waypoints[t].enable()},e.defaults={context:window,enabled:!0,enter:t,entered:t,exit:t,exited:t},i.Inview=e}();
+    </script>
+
+                
+    <script async src="/public/build/valnet-header.38f02c41.js"></script>
+
+    
+    
+    
+    
+    
+                
+    
+
+    	
+	    	    
+	    	        <link rel="canonical" href="https://www.makeuseof.com/install-and-use-yay-arch-linux/" />
+	    
+	    <title>How to Install and Use yay on Arch Linux</title>
+	    
+	    	        	        <meta name="description" content="An AUR helper like yay lets you download and install packages from the Arch User Repository. Here's how to install yay on Arch Linux." />
+	    	    
+	    			<meta name="robots" content="max-image-preview:large" />
+	    	
+        
+        
+        
+
+                        
+    <meta property="og:title" content="How to Install and Use yay on Arch Linux"/>
+    <meta property="og:type" content="article"/>
+
+            <meta property="og:image" content="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/04/installing-yay-on-arch-linux.jpg"/>
+                    <meta property="og:image:width" content="1680"/>
+            <meta property="og:image:height" content="840"/>
+                    
+
+                                                <meta property="og:url" content="https://www.makeuseof.com/install-and-use-yay-arch-linux/"/>
+                        
+    <meta property="og:locale" content="en_US"/>
+    <meta property="og:description" content="An AUR helper like yay lets you download and install packages from the Arch User Repository. Here's how to install yay on Arch Linux."/>
+
+            <meta property="og:site_name" content="MUO"/>
+    
+                        <meta property="article:published_time" content="2022-04-18T18:00:14Z"/>
+                            <meta property="article:modified_time" content="2022-04-18T18:00:14Z"/>
+                                        <meta property="article:section" content="Linux"/>
+        
+                    <meta property="article:author" content="Deepesh Sharma"/>
+            
+
+
+
+                    <meta property="article:publisher" content="https://www.facebook.com/muo.official"/>
+    
+                    <meta name="twitter:card" content="summary_large_image">
+                <meta name="twitter:site" content="@MUO_official">
+        <meta name="twitter:title" content="How to Install and Use yay on Arch Linux">
+        <meta name="twitter:description" content="An AUR helper like yay lets you download and install packages from the Arch User Repository. Here's how to install yay on Arch Linux.">
+                                <meta property="twitter:creator" content="@sharmadeepesh_"/>
+            
+                    <meta name="twitter:image" content="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/04/installing-yay-on-arch-linux.jpg">
+            	
+							<meta property="fb:app_id" content="172826243054377"/>
+	
+
+		
+
+    <!-- FAVICON -->
+    <!-- https://www.favicon-generator.org/ -->
+    <link rel="icon" sizes="48x48" href="/public/build/images/favicon-48x48.fb40876e.png">
+    <link rel="icon" sizes="96x96" href="/public/build/images/favicon-96x96.88eebd60.png">
+    <link rel="icon" sizes="144x144" href="/public/build/images/favicon-144x144.cc361b2e.png">
+    <link rel="icon" sizes="192x192" href="/public/build/images/favicon-192x192.89cc1648.png">
+    <link rel="icon" sizes="240x240" href="/public/build/images/favicon-240x240.df310da5.png">
+
+    <link rel="apple-touch-icon" sizes="240x240" href="/public/build/images/favicon-240x240.df310da5.png">
+    <link rel="shortcut icon" href="/public/build/images/favicon-192x192.89cc1648.png">
+
+
+    
+
+                        <script type="text/javascript">
+                (function (window, document, accountId) {
+                    window.skimlinks_exclude = ["shop-links.co", "shop-edits.co"];
+                    window.NRTV_EVENT_DATA = { exclusiveLinks: true };
+                    var b = document.createElement("script");
+                    b.type = "text/javascript";
+                    b.src = "https://static.narrativ.com/tags/narrativ-pub.1.0.0.js";
+                    b.async = true;
+                    b.id = 'nrtvTag';
+                    b.setAttribute('data-narrativ-id', accountId);
+                    var a = document.getElementsByTagName("script")[0];
+                    a.parentNode.insertBefore(b, a);
+                })(window, document, "2411");
+            </script>
+            
+
+                                <!-- Using AdsNinja V10 -->
+                <!-- Ad Header Start -->
+                <!-- Chosen Ad Setup: Balance Content-All Desktop - Prebid. -->
+
+
+                
+
+
+
+
+                <!-- Ad Header End -->
+                
+    <!-- GLOABL JS VARIABLES -->
+    <script>
+
+
+    var valnet_site_viewType = "organic";
+    var valnet_site_view = "all";
+    var valnet_site_campaign = "";
+    var valnet_site_device = "desktop";
+    var valnet_hideAds = false;
+    </script>
+
+    
+</head>
+
+<body class="w-website js-tldr " >
+
+    <!-- No winning ad found for zone: body injected! -->
+
+    <div id="body-anchor"></div>
+
+                <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TBXVR8R"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    
+    
+    
+                                
+        
+                            <div class="w-pencil-banner">
+                <a href="https://www.makeuseof.com/tag/best-black-friday-deals/" target="_blank" id="w-pencil-banner-link" rel="noreferrer">Check out our regularly updated best Black Friday deals page for the biggest savings this holiday shopping season!</a>
+            </div>
+        
+                        
+<header id="js-header" class="w-header " itemscope itemtype="https://schema.org/WPHeader">
+    <div class="header-nav">
+
+        <h1 class="hide" itemprop="headline" aria-level="1" title="MUO">MUO</h1>
+
+        <div class="header-logo">
+            <a href="/" title="" rel="home">
+                <picture>
+                    <source srcset="/public/build/images/muo-logo-full-colored-dark.svg" media="(prefers-color-scheme: dark)">
+                    <img src="/public/build/images/muo-logo-full-colored-light.svg" alt="MUO logo" title="MUO" width="200" height="64">
+                </picture>
+            </a>
+        </div>
+        <div class="header-mobile-menu-icon icon i-menu"></div>
+        <div id="js-search" class="header-search-btn icon i-search js-search-target"></div>
+
+        <div id="header-menu" class="w-header-menu">
+            <div class="menu-exit-btn icon i-close"></div>
+
+            <div class="header-menu">
+                
+
+<nav class="menu-nav" id="menu-site">
+    <ul class="menu-nav-list" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+         
+                        <li itemprop="name" class="w-drop-down">
+                                                            <a class="menu-nav-link">PC &amp; Mobile</a>
+                        <span class="menu-nav-more-btn icon dropdown-btn"></span>
+                                    
+                <ul class="drop-down">
+                     
+                        <li itemprop="name">
+                <a class="menu-nav-link" href="/category/windows/" itemprop="url">Windows</a>
+            </li>
+                                <li itemprop="name">
+                <a class="menu-nav-link" href="/category/mac/" itemprop="url">Mac</a>
+            </li>
+                                <li itemprop="name">
+                <a class="menu-nav-link" href="/category/linux/" itemprop="url">Linux</a>
+            </li>
+                                <li itemprop="name">
+                <a class="menu-nav-link" href="/category/google-android/" itemprop="url">Android</a>
+            </li>
+                                <li itemprop="name">
+                <a class="menu-nav-link" href="/category/ios/" itemprop="url">iPhone &amp; iPad</a>
+            </li>
+                                <li itemprop="name">
+                <a class="menu-nav-link" href="/category/web-based/" itemprop="url">Internet</a>
+            </li>
+                                <li itemprop="name">
+                <a class="menu-nav-link" href="/category/security/" itemprop="url">Security</a>
+            </li>
+                                <li itemprop="name">
+                <a class="menu-nav-link" href="/category/programming/" itemprop="url">Programming</a>
+            </li>
+            
+
+                </ul>
+            </li>
+                                <li itemprop="name" class="w-drop-down">
+                                                            <a class="menu-nav-link">Lifestyle</a>
+                        <span class="menu-nav-more-btn icon dropdown-btn"></span>
+                                    
+                <ul class="drop-down">
+                     
+                        <li itemprop="name">
+                <a class="menu-nav-link" href="/category/entertainment/" itemprop="url">Entertainment</a>
+            </li>
+                                <li itemprop="name">
+                <a class="menu-nav-link" href="/category/productivity/" itemprop="url">Productivity</a>
+            </li>
+                                <li itemprop="name">
+                <a class="menu-nav-link" href="/category/work-career/" itemprop="url">Work &amp; Career</a>
+            </li>
+                                <li itemprop="name">
+                <a class="menu-nav-link" href="/category/creative/" itemprop="url">Creative</a>
+            </li>
+                                <li itemprop="name">
+                <a class="menu-nav-link" href="/category/games/" itemprop="url">Gaming</a>
+            </li>
+                                <li itemprop="name">
+                <a class="menu-nav-link" href="/category/social-media/" itemprop="url">Social Media</a>
+            </li>
+                                <li itemprop="name">
+                <a class="menu-nav-link" href="/category/wellness/" itemprop="url">Wellness</a>
+            </li>
+            
+
+                </ul>
+            </li>
+                                <li itemprop="name" class="w-drop-down">
+                                                            <a class="menu-nav-link">Hardware</a>
+                        <span class="menu-nav-more-btn icon dropdown-btn"></span>
+                                    
+                <ul class="drop-down">
+                     
+                        <li itemprop="name">
+                <a class="menu-nav-link" href="/category/technology-explained/" itemprop="url">Technology Explained</a>
+            </li>
+                                <li itemprop="name">
+                <a class="menu-nav-link" href="/category/buying-guides/" itemprop="url">Buyer&#039;s Guides</a>
+            </li>
+                                <li itemprop="name">
+                <a class="menu-nav-link" href="/category/smart-home/" itemprop="url">Smart Home</a>
+            </li>
+                                <li itemprop="name">
+                <a class="menu-nav-link" href="/category/diy-projects/" itemprop="url">DIY</a>
+            </li>
+                                <li itemprop="name">
+                <a class="menu-nav-link" href="/category/product-reviews/" itemprop="url">Product Reviews</a>
+            </li>
+            
+
+                </ul>
+            </li>
+                                <li itemprop="name" class="w-drop-down">
+                                                            <a class="menu-nav-link highlight">Free Stuff</a>
+                        <span class="menu-nav-more-btn icon dropdown-btn"></span>
+                                    
+                <ul class="drop-down">
+                     
+                        <li itemprop="name">
+                <a class="menu-nav-link" href="/tag/longform-guide/" itemprop="url">Free eBooks</a>
+            </li>
+                                <li itemprop="name">
+                <a class="menu-nav-link" href="/giveaways/" itemprop="url">Giveaways</a>
+            </li>
+                                <li itemprop="name">
+                <a class="menu-nav-link" href="/tag/best-of/" itemprop="url">Top Lists</a>
+            </li>
+                                <li itemprop="name">
+                <a class="menu-nav-link" href="/tag/cheat-sheet/" itemprop="url">Free Cheat Sheets</a>
+            </li>
+            
+
+                </ul>
+            </li>
+                                <li itemprop="name">
+                <a class="menu-nav-link" href="/category/news/" itemprop="url">Tech News</a>
+            </li>
+                                <li itemprop="name">
+                <a class="menu-nav-link" href="/category/best-deals/" itemprop="url">Deals</a>
+            </li>
+                                <li itemprop="name">
+                <a class="menu-nav-link" href="/tag/awards/" itemprop="url">Awards</a>
+            </li>
+                                <li itemprop="name" class="w-drop-down">
+                                                            <a class="menu-nav-link">About</a>
+                        <span class="menu-nav-more-btn icon dropdown-btn"></span>
+                                    
+                <ul class="drop-down">
+                     
+                        <li itemprop="name">
+                <a class="menu-nav-link" href="/about/" itemprop="url">About MUO</a>
+            </li>
+                                <li itemprop="name">
+                <a class="menu-nav-link" href="/advertise/" itemprop="url">Advertise</a>
+            </li>
+                                <li itemprop="name">
+                <a class="menu-nav-link" href="/contact/" itemprop="url">Contact</a>
+            </li>
+                                <li itemprop="name">
+                <a class="menu-nav-link" href="/privacy-policy/" itemprop="url">Privacy</a>
+            </li>
+                                <li itemprop="name">
+                <a class="menu-nav-link" href="https://deals.makeuseof.com/?utm_source=makeuseof&amp;utm_medium=homepage&amp;utm_campaign=shoptab" itemprop="url">Shop</a>
+            </li>
+                                <li itemprop="name">
+                <a class="menu-nav-link" href="/contributor/" itemprop="url">Write For Us</a>
+            </li>
+                                <li itemprop="name">
+                <a class="menu-nav-link" href="/page/newsletter/" itemprop="url">Newsletter</a>
+            </li>
+                                <li itemprop="name">
+                <a class="menu-nav-link" href="/tag/rup/" itemprop="url">Podcasts</a>
+            </li>
+            
+
+                </ul>
+            </li>
+            
+
+    </ul>
+</nav>                                
+                                    
+    <div class="w-menu-follow">
+        <span class="menu-follow-button icon i-social">Follow Us</span>
+        <div class="menu-follow drop-down">
+                        <div class="menu-follow-social">
+
+                <span class="menu-follow-title">Follow MUO</span>
+            	<ul>
+                                            <li><a class="icon i-youtube" href="https://www.youtube.com/muotv" target="_blank"></a></li>
+                                            <li><a class="icon i-facebook" href="https://www.facebook.com/muo.official" target="_blank"></a></li>
+                                            <li><a class="icon i-instagram" href="https://www.instagram.com/muoofficial/" target="_blank"></a></li>
+                                            <li><a class="icon i-twitter" href="https://twitter.com/MUO_official" target="_blank"></a></li>
+                                            <li><a class="icon i-pinterest" href="https://www.pinterest.com/muo_official/" target="_blank"></a></li>
+                                            <li><a class="icon i-feed" href="/feed/" target="_blank"></a></li>
+                                            <li><a class="icon i-newspaper" href="/page/newsletter/" target="_blank"></a></li>
+                        	        </ul>
+
+            </div>
+            
+            
+        </div>
+    </div>
+                
+                
+            </div>
+
+        </div>
+
+        
+        
+    </div>
+
+</header>
+
+<div class="w-header-search js-search-target">
+    <div id="js-exit-search" class="header-search-exit icon i-close"></div>
+    <div class="header-search">
+        <form method="get" class="search-form js-searchBox icon i-search" id="searchform2" action="/search/?q=">
+            <input id="js-search-input" type="text" name="q" class="input-text search-input" autocomplete="off" id="s2" placeholder="Search MUO" autofocus>
+        </form>
+    </div>
+</div>
+
+<!-- Zone: sticky header. -->
+<!-- No ads allowed! -->
+
+<!-- Zone: header. -->
+<!-- No ads allowed! -->
+
+
+        
+
+        <main class="w-content ">
+                                        <article class="w-article infinite-scroll   article">
+
+        
+            
+
+               
+                                                                                                        
+    
+    
+            
+    
+            
+    
+    
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+    
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+    
+    
+                                                                                
+        
+            
+                            
+                            
+
+
+                                                        
+            
+    
+            
+    
+                                                                            
+                                
+                                
+                                                
+            
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+                                                
+                                                        
+                                                                                                                                    
+                                
+                                                
+            
+    
+                                                                                
+        
+                                
+    
+            
+    
+            
+    
+                                                                                                                        
+            
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                        
+                                
+                                
+                                                
+            
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                        
+                                
+                                
+                                                
+            
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+    
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                        
+                                
+                                
+                                                
+            
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+    
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                        
+                                
+                                
+                                                
+            
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+    
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                        
+                                
+                                
+                                                
+            
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+    
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                        
+                                
+                                
+                                                
+            
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+    
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                        
+                                
+                                
+                                                
+            
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+    
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                        
+                                
+                                
+                                                
+            
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                        
+                                
+                                
+                                                
+            
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                                                                                                                                                                                                        
+            
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                        
+                                
+                                
+                                                
+            
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                        
+                                
+                                
+                                                
+            
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+    
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                        
+                                
+                                
+                                                
+            
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+    
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                        
+                                
+                                
+                                                
+            
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+    
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                        
+                                
+                                
+                                                
+            
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                        
+                                
+                                                                    
+                                                
+            
+    
+                                                                                
+                            
+            
+    
+            
+    
+            
+    
+    
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                        
+                                
+                                
+                                                
+            
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+    
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                        
+                                
+                                
+                                                
+            
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+    
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                        
+                                
+                                
+                                                
+            
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+    
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                        
+                                
+                                
+                                                
+            
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+    
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+    
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                        
+                                
+                                
+                                                
+            
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+    
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                        
+                                
+                                
+                                                
+            
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+    
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                        
+                                
+                                
+                                                
+            
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+    
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                        
+                                
+                                                                    
+                                                
+            
+    
+                                                                                
+                            
+            
+    
+            
+    
+            
+    
+    
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                        
+                                
+                                
+                                                
+            
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+    
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                        
+                                
+                                
+                                                
+            
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+    
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+    
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                        
+                                
+                                
+                                                
+            
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                        
+                                
+                                
+                                                
+            
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+    
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                        
+                                
+                                
+                                                
+            
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+    
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                        
+                                
+                                
+                                                
+            
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+    
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                        
+                                
+                                
+                                                
+            
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+    
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                        
+                                
+                                
+                                                
+            
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+    
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                        
+                                
+                                
+                                                
+            
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                        
+                                
+                                                                    
+                                                
+            
+    
+                                                                                
+                            
+            
+    
+            
+    
+            
+    
+    
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                        
+                                
+                                
+                                                
+            
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+    
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                                                                                                                                                                                                        
+            
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                        
+                                
+                                
+                                                
+            
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                        
+                                
+                                
+                                                
+            
+    
+                                                                                
+        
+            
+    
+            
+    
+            
+    
+                                                        
+                                
+                                
+                                                
+            
+    
+                                                                                
+        
+    
+
+
+<header class="article_heading"><div class="heading_breadcrumb">
+ 
+<script type="application/ld+json"> { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": "1", "name": "Home", "item": "https://www.makeuseof.com/" }, { "@type": "ListItem", "position":"2", "name": "Linux", "item": "https://www.makeuseof.com/category/linux/" }, { "@type": "ListItem", "position":"3", "name": "How to Install and Use yay on Arch Linux", "item": "https://www.makeuseof.com/install-and-use-yay-arch-linux/" } ] } </script>
+<nav><ul> <li><a href="/">Home</a></li> <li><a href="https://www.makeuseof.com/category/linux/">Linux</a></li> </ul> </nav></div>
+
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":0,"skipEvery":null,"nbrPlacementFilledEachSkip":0,"nbrPlacementsScanned":0,"ruleCount":650,"degradationStartingPoint":1,"actualCount":0} -->
+<h1 class="heading_title">How to Install and Use yay on Arch Linux</h1><div class="heading_meta" ><div class="w-author">
+ 
+<span class="meta_txt author lighter">By</span>
+<a class="meta_txt author" href="/author/deepesh-sharma/"> Deepesh Sharma </a></div>
+
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":0,"skipEvery":null,"nbrPlacementFilledEachSkip":0,"nbrPlacementsScanned":1,"ruleCount":650,"degradationStartingPoint":1,"actualCount":0} -->
+ 
+<span class="meta_txt date"><time datetime="2022-04-18T18:00:00Z">Published Apr 18, 2022</time></span></div>
+
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":0,"skipEvery":null,"nbrPlacementFilledEachSkip":0,"nbrPlacementsScanned":2,"ruleCount":650,"degradationStartingPoint":1,"actualCount":0} --><div class="heading_sharing">
+ </div>
+
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":0,"skipEvery":null,"nbrPlacementFilledEachSkip":0,"nbrPlacementsScanned":3,"ruleCount":650,"degradationStartingPoint":1,"actualCount":0} -->
+<p class="heading_excerpt">An AUR helper like yay lets you download and install packages from the Arch User Repository. Here's how to install yay on Arch Linux.</p>
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":0,"skipEvery":null,"nbrPlacementFilledEachSkip":0,"nbrPlacementsScanned":4,"ruleCount":650,"degradationStartingPoint":1,"actualCount":133} --><div class="heading_image responsive-img img-size-heading-image-full-width expandable " style="padding-bottom:50%" data-img-url="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/04/installing-yay-on-arch-linux.jpg" data-modal-id="single-image-modal" data-modal-container-id="single-image-modal-container" data-img-caption="&quot;&quot;">
+ 
+<figure> <picture> <!--[if IE 9]> <video style="display: none;"><![endif]--> <source media="(min-width: 1024px)" sizes="1140px" srcset="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/04/installing-yay-on-arch-linux.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5"/> <source media="(min-width: 768px)" sizes="943px" srcset="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/04/installing-yay-on-arch-linux.jpg?q=50&fit=contain&w=943&h=&dpr=1.5"/> <source media="(min-width: 481px)" sizes="767px" srcset="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/04/installing-yay-on-arch-linux.jpg?q=50&fit=contain&w=767&h=&dpr=1.5"/> <source media="(min-width: 0px)" sizes="480px" srcset="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/04/installing-yay-on-arch-linux.jpg?q=50&fit=contain&w=480&h=&dpr=1.5"/> <!--[if IE 9]></video><![endif]--><img width="1680" height="840" alt="installing yay on arch linux" data-img-url="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/04/installing-yay-on-arch-linux.jpg"/> </picture> <figcaption class="item-img-caption"></figcaption> </figure> </div>
+
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":0,"skipEvery":null,"nbrPlacementFilledEachSkip":0,"nbrPlacementsScanned":5,"ruleCount":650,"degradationStartingPoint":1,"actualCount":133} -->
+ <!-- No winning ad found for zone: below main pic! --> </header>
+
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":0,"skipEvery":null,"nbrPlacementFilledEachSkip":0,"nbrPlacementsScanned":6,"ruleCount":650,"degradationStartingPoint":1,"actualCount":133} --><section id="article-body" class="article-body" itemprop="articleBody"><div class="affiliate-sponsored">
+ 
+<span data-nosnippet>Readers like you help support MUO. When you make a purchase using links on our site, we may earn an affiliate commission. <a href="/page/terms-of-use">Read more.</a></span></div>
+
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":0,"skipEvery":null,"nbrPlacementFilledEachSkip":0,"nbrPlacementsScanned":7,"ruleCount":650,"degradationStartingPoint":1,"actualCount":133} -->
+<p>Pacman is a powerful package manager that ships as the default on Arch-based distros, but it lacks the functionality of downloading packages from the Arch User Repository (AUR). The AUR is a community-maintained repository providing thousands of third-party packages in the form of installation scripts, also known as PKGBUILDs.</p>
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":0,"skipEvery":null,"nbrPlacementFilledEachSkip":0,"nbrPlacementsScanned":8,"ruleCount":650,"degradationStartingPoint":1,"actualCount":461} -->
+ <!-- No winning ad found for zone: below first paragraph! --><!-- No winning ad found for zone: mid intro! --> 
+<p>To install packages using these PKGBUILDs, we require an AUR helper like yay. yay doesn&#39;t come preinstalled on Arch Linux and isn&#39;t available in the official Arch repositories either. So how do you install yay to download packages from the AUR on your Arch desktop? Let&#39;s find out.</p>
+<!-- Zone: character count repeatable. --><!-- No ads allowed! -->
+ <!-- No winning ad found for zone: native in content! -->
+<h2 id="how-to-install-yay-on-arch-linux"> How to Install yay on Arch Linux</h2>
+<p>The yay package is only available in the Arch User Repository. Note that you can manually install packages from the AUR without using an AUR helper (similar to how we&#39;ll install yay below), but as the name suggests, an &quot;AUR helper&quot; assists you in the installation process, making it easier for you to install packages with minimum user interaction.</p>
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":1,"skipEvery":null,"nbrPlacementFilledEachSkip":1,"nbrPlacementsScanned":10,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":362} -->
+<p>To install yay on your Arch desktop, first, download the following dependencies:</p>
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":1,"skipEvery":null,"nbrPlacementFilledEachSkip":1,"nbrPlacementsScanned":11,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":442} -->
+<code class="hljs sql">sudo pacman -S <span class="hljs-comment">--needed base-devel git</span></code>
+<p>Then, clone the yay repository <a href="https://www.makeuseof.com/clone-github-repository-git-bash/">using the git clone command</a>:</p>
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":1,"skipEvery":null,"nbrPlacementFilledEachSkip":1,"nbrPlacementsScanned":12,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":501} -->
+<code class="hljs php">git <span class="hljs-keyword">clone</span> https:<span class="hljs-comment">//aur.archlinux.org/yay.git</span></code>
+<p>Change your present working directory to the newly-downloaded <strong>yay</strong> folder using <a href="https://www.makeuseof.com/cd-command-in-linux/">the cd command</a>:</p>
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":1,"skipEvery":null,"nbrPlacementFilledEachSkip":1,"nbrPlacementsScanned":13,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":595} -->
+<code class="hljs bash"><span class="hljs-built_in">cd</span> yay</code>
+<p>Finally, use the makepkg command to build and install yay:</p>
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":1,"skipEvery":null,"nbrPlacementFilledEachSkip":1,"nbrPlacementsScanned":14,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":653} -->
+<code class="hljs ">makepkg -si</code>
+<p>If the above command throws the &quot;cannot find the fakeroot binary&quot; error, make sure you&#39;ve successfully installed the <strong>base-devel</strong> package and then re-run the command.</p>
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":1,"skipEvery":null,"nbrPlacementFilledEachSkip":1,"nbrPlacementsScanned":15,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":831} -->
+<section class="emaki-custom-block emaki-custom-note"><div class="emaki-custom note" id="custom_block_13"><p>In addition to Arch Linux, this method works for <a href="https://www.makeuseof.com/best-arch-based-linux-distros/">other Arch-based distributions</a> as well, including Manjaro, EndeavourOS, and Garuda Linux.</p> </div></section>
+<p>Once done, verify the installation by checking the version of yay installed.</p>
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":1,"skipEvery":null,"nbrPlacementFilledEachSkip":1,"nbrPlacementsScanned":16,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":907} -->
+<code class="hljs sql">yay <span class="hljs-comment">--version</span></code>
+<p>If the output returns a version number, you have succeeded in installing yay.</p>
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":1,"skipEvery":null,"nbrPlacementFilledEachSkip":1,"nbrPlacementsScanned":17,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":984} -->
+<p>The AUR isn&#39;t originally built for use on Linux distros other than Arch Linux and its derivatives (like Ubuntu and Linux Mint). On such distributions, you can use <a href="https://github.com/pacstall/pacstall" rel="noopener noreferrer" target="_blank">Pacstall</a>, an AUR-inspired package manager that provides pacscripts for installing software.</p>
+<!-- Zone: character count repeatable. --><!-- No ads allowed! --><div class=ad-odd>
+<!-- No winning ad found for zone: every images #1! --></div>
+
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":2,"skipEvery":null,"nbrPlacementFilledEachSkip":2,"nbrPlacementsScanned":19,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":0} -->
+<h2 id="how-to-manage-aur-packages-using-yay"> How to Manage AUR Packages Using yay</h2>
+<p>yay and Pacman commands have a lot in common. For example, to install a new package using Pacman or yay, you use the <strong>-S</strong> flag, whereas to remove one, you&#39;ve to use the <strong>-R</strong> option.</p>
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":2,"skipEvery":null,"nbrPlacementFilledEachSkip":2,"nbrPlacementsScanned":20,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":181} -->
+<p>Now that you know the similarity between the two package managers, let&#39;s begin with <a href="https://www.makeuseof.com/how-to-install-and-remove-packages-arch-linux/">package management on Arch Linux</a> using yay.</p>
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":2,"skipEvery":null,"nbrPlacementFilledEachSkip":2,"nbrPlacementsScanned":21,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":312} -->
+<h3 id="searching-for-aur-packages">Searching for AUR Packages</h3>
+<p>Like Pacman, yay allows users to search for packages prior to installing them. If you&#39;re unsure about the name of a particular package, you can use the yay command with the search term to find related packages.</p>
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":2,"skipEvery":null,"nbrPlacementFilledEachSkip":2,"nbrPlacementsScanned":22,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":526} -->
+<code class="hljs ">yay searchterm</code>
+<p>For example, to search for packages with &quot;chrome&quot; in their name:</p>
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":2,"skipEvery":null,"nbrPlacementFilledEachSkip":2,"nbrPlacementsScanned":23,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":600} -->
+<code class="hljs ">yay chrome</code>
+<p>Output:</p>
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":2,"skipEvery":null,"nbrPlacementFilledEachSkip":2,"nbrPlacementsScanned":24,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":607} --><div class="body-img landscape"><div class="responsive-img image-expandable img-article-item" style="padding-bottom:63.542642924086%" data-img-url="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/04/searching-packages-with-yay.jpg" data-modal-id="single-image-modal" data-modal-container-id="single-image-modal-container" data-img-caption="&quot;&quot;">
+ 
+<figure> <picture> <!--[if IE 9]> <video style="display: none;"><![endif]--> <source media="(min-width: 1024px)" sizes="1500px" data-srcset="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/04/searching-packages-with-yay.jpg?q=50&fit=crop&w=1500&dpr=1.5"/> <source media="(min-width: 768px)" sizes="943px" data-srcset="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/04/searching-packages-with-yay.jpg?q=50&fit=crop&w=943&dpr=1.5"/> <source media="(min-width: 481px)" sizes="767px" data-srcset="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/04/searching-packages-with-yay.jpg?q=50&fit=crop&w=767&dpr=1.5"/> <source media="(min-width: 0px)" sizes="480px" data-srcset="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/04/searching-packages-with-yay.jpg?q=50&fit=crop&w=480&dpr=1.5"/> <!--[if IE 9]></video><![endif]--><img width="1067" height="678" class="lazyload" alt="searching packages with yay" data-img-url="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/04/searching-packages-with-yay.jpg"/> </picture> </figure> </div>
+
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":2,"skipEvery":null,"nbrPlacementFilledEachSkip":2,"nbrPlacementsScanned":25,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":607} -->
+ </div>
+
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":2,"skipEvery":null,"nbrPlacementFilledEachSkip":2,"nbrPlacementsScanned":26,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":607} -->
+<p>To search for a package on both the official repositories and the AUR, use the <strong>-Ss</strong> flag:</p>
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":2,"skipEvery":null,"nbrPlacementFilledEachSkip":2,"nbrPlacementsScanned":27,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":695} -->
+<code class="hljs ">yay -Ss google-chrome</code>
+<p>You can also specify multiple keywords to perform a narrow, more focused search as follows:</p>
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":2,"skipEvery":null,"nbrPlacementFilledEachSkip":2,"nbrPlacementsScanned":28,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":786} -->
+<code class="hljs ">yay -S term1 term2</code>
+<p>The aforementioned command will first search for <strong>term1</strong> and then narrow down the results by searching for <strong>term2</strong> in the returned results.</p>
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":2,"skipEvery":null,"nbrPlacementFilledEachSkip":2,"nbrPlacementsScanned":29,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":921} -->
+<h3 id="installing-packages-with-yay">Installing Packages With yay</h3>
+<p>As discussed before, to install packages with yay, simply specify the package name next to the <strong>-S</strong> flag:</p>
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":2,"skipEvery":null,"nbrPlacementFilledEachSkip":2,"nbrPlacementsScanned":30,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":1024} -->
+<code class="hljs ">yay -S packagename</code>
+<p>To install the Google Chrome AUR package using yay:</p>
+<!-- Zone: character count repeatable. --><!-- No ads allowed! -->
+<code class="hljs ">yay -S google-chrome</code>
+<section class="emaki-custom-block emaki-custom-note"><div class="emaki-custom note" id="custom_block_38"><p>The installation process isn&#39;t completely automatic and you might have to enter your superuser password in the middle of the installation.</p> </div></section>
+<p>To only get the PKGBUILD of a package, use the <strong>-G</strong> or <strong>--getpkgbuild</strong> flag:</p>
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":3,"skipEvery":null,"nbrPlacementFilledEachSkip":3,"nbrPlacementsScanned":32,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":72} -->
+<code class="hljs ">yay -G google-chrome</code>
+<p>You can also choose to print the PKGBUILD by using the <strong>-p</strong> flag with <strong>-G</strong>:</p>
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":3,"skipEvery":null,"nbrPlacementFilledEachSkip":3,"nbrPlacementsScanned":33,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":143} -->
+<code class="hljs ">yay -Gp google-chrome</code>
+<p>Output:</p>
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":3,"skipEvery":null,"nbrPlacementFilledEachSkip":3,"nbrPlacementsScanned":34,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":150} --><div class="body-img landscape"><div class="responsive-img image-expandable img-article-item" style="padding-bottom:47.981366459627%" data-img-url="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/04/view-pkgbuild-with-yay.jpg" data-modal-id="single-image-modal" data-modal-container-id="single-image-modal-container" data-img-caption="&quot;&quot;">
+ 
+<figure> <picture> <!--[if IE 9]> <video style="display: none;"><![endif]--> <source media="(min-width: 1024px)" sizes="1500px" data-srcset="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/04/view-pkgbuild-with-yay.jpg?q=50&fit=crop&w=1500&dpr=1.5"/> <source media="(min-width: 768px)" sizes="943px" data-srcset="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/04/view-pkgbuild-with-yay.jpg?q=50&fit=crop&w=943&dpr=1.5"/> <source media="(min-width: 481px)" sizes="767px" data-srcset="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/04/view-pkgbuild-with-yay.jpg?q=50&fit=crop&w=767&dpr=1.5"/> <source media="(min-width: 0px)" sizes="480px" data-srcset="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/04/view-pkgbuild-with-yay.jpg?q=50&fit=crop&w=480&dpr=1.5"/> <!--[if IE 9]></video><![endif]--><img width="1288" height="618" class="lazyload" alt="view pkgbuild with yay" data-img-url="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/04/view-pkgbuild-with-yay.jpg"/> </picture> </figure> </div>
+
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":3,"skipEvery":null,"nbrPlacementFilledEachSkip":3,"nbrPlacementsScanned":35,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":150} -->
+ </div>
+
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":3,"skipEvery":null,"nbrPlacementFilledEachSkip":3,"nbrPlacementsScanned":36,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":150} -->
+<h3 id="removing-packages-with-yay">Removing Packages With yay</h3>
+<p>When you don&#39;t need an AUR package and want to remove it from your system, use the <strong>-R</strong> option:</p>
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":3,"skipEvery":null,"nbrPlacementFilledEachSkip":3,"nbrPlacementsScanned":37,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":247} -->
+<code class="hljs ">yay -R packagename</code>
+<p>To uninstall Google Chrome:</p>
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":3,"skipEvery":null,"nbrPlacementFilledEachSkip":3,"nbrPlacementsScanned":38,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":274} -->
+<code class="hljs ">yay -R google-chrome</code>
+<p>If you want to remove the dependencies along with the package, append the <strong>-ns</strong> flag to the previous command:</p>
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":3,"skipEvery":null,"nbrPlacementFilledEachSkip":3,"nbrPlacementsScanned":39,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":381} -->
+<code class="hljs ">yay -Rns google-chrome</code>
+<h3 id="upgrading-aur-packages">Upgrading AUR Packages</h3>
+<p>Invoking the yay command without any arguments will perform a full system upgrade similar to the <strong>pacman -Syu</strong> command. Note that this command will also synchronize and upgrade packages from the official repositories in addition to the AUR.</p>
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":3,"skipEvery":null,"nbrPlacementFilledEachSkip":3,"nbrPlacementsScanned":40,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":619} -->
+<p>To only update AUR packages, use the <strong>-Sua</strong> flag with the command:</p>
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":3,"skipEvery":null,"nbrPlacementFilledEachSkip":3,"nbrPlacementsScanned":41,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":683} -->
+<code class="hljs ">yay -Sua</code>
+<p>If you <a href="https://www.makeuseof.com/prevent-packages-from-getting-updated-arch-linux/">don&#39;t want to update a package on Arch Linux</a>, you&#39;ll have to modify the configuration file located at <strong>/etc/pacman.conf</strong>. Linux also allows you to <a href="https://www.makeuseof.com/how-to-downgrade-packages-linux/">downgrade packages on your system</a> if you want.</p>
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":3,"skipEvery":null,"nbrPlacementFilledEachSkip":3,"nbrPlacementsScanned":42,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":889} -->
+<h3 id="using-yay-to-remove-unnecessary-dependencies">Using yay to Remove Unnecessary Dependencies</h3>
+<p>Unused dependencies can quickly pile up and consume a huge chunk of your system storage if not taken care of. You can either choose to remove the dependencies along with the packages by using the <strong>-Rns</strong> flag each time you remove something, or you can take the better route by sweeping them away all at once using the <strong>-Yc</strong> flag.</p>
+<!-- Zone: character count repeatable. --><!-- No ads allowed! -->
+<code class="hljs ">yay -Yc</code>
+<p>The <strong>-Y</strong> in the command stands for &quot;yay&quot; and will only perform operations on packages installed using yay.</p>
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":4,"skipEvery":null,"nbrPlacementFilledEachSkip":4,"nbrPlacementsScanned":44,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":114} -->
+<h3 id="additional-yay-commands">Additional yay Commands</h3>
+<p>To print package statistics and system health with yay, run the following command:</p>
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":4,"skipEvery":null,"nbrPlacementFilledEachSkip":4,"nbrPlacementsScanned":45,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":196} -->
+<code class="hljs ">yay -Ps</code>
+<p>Output:</p>
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":4,"skipEvery":null,"nbrPlacementFilledEachSkip":4,"nbrPlacementsScanned":46,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":203} --><div class="body-img landscape"><div class="responsive-img image-expandable img-article-item" style="padding-bottom:63.756906077348%" data-img-url="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/04/print-statistics-using-yay.jpg" data-modal-id="single-image-modal" data-modal-container-id="single-image-modal-container" data-img-caption="&quot;&quot;">
+ 
+<figure> <picture> <!--[if IE 9]> <video style="display: none;"><![endif]--> <source media="(min-width: 1024px)" sizes="1500px" data-srcset="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/04/print-statistics-using-yay.jpg?q=50&fit=crop&w=1500&dpr=1.5"/> <source media="(min-width: 768px)" sizes="943px" data-srcset="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/04/print-statistics-using-yay.jpg?q=50&fit=crop&w=943&dpr=1.5"/> <source media="(min-width: 481px)" sizes="767px" data-srcset="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/04/print-statistics-using-yay.jpg?q=50&fit=crop&w=767&dpr=1.5"/> <source media="(min-width: 0px)" sizes="480px" data-srcset="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/04/print-statistics-using-yay.jpg?q=50&fit=crop&w=480&dpr=1.5"/> <!--[if IE 9]></video><![endif]--><img width="905" height="577" class="lazyload" alt="print statistics using yay" data-img-url="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/04/print-statistics-using-yay.jpg"/> </picture> </figure> </div>
+
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":4,"skipEvery":null,"nbrPlacementFilledEachSkip":4,"nbrPlacementsScanned":47,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":203} -->
+ </div>
+
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":4,"skipEvery":null,"nbrPlacementFilledEachSkip":4,"nbrPlacementsScanned":48,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":203} -->
+<p>In case you need help with the commands, you can <a href="https://www.makeuseof.com/command-line-help-linux/">easily get command-line help</a> using the <strong>--help</strong> flag:</p>
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":4,"skipEvery":null,"nbrPlacementFilledEachSkip":4,"nbrPlacementsScanned":49,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":303} -->
+<code class="hljs sql">yay <span class="hljs-comment">--help</span></code>
+<p>Alternatively, you can view the yay manual page using:</p>
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":4,"skipEvery":null,"nbrPlacementFilledEachSkip":4,"nbrPlacementsScanned":50,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":357} -->
+<code class="hljs ">man yay</code><div class=ad-even>
+<!-- No winning ad found for zone: every images #2! --></div>
+
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":4,"skipEvery":null,"nbrPlacementFilledEachSkip":4,"nbrPlacementsScanned":51,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":357} -->
+<h2 id="the-aur-has-got-everything-you-need"> The AUR Has Got Everything You Need!</h2>
+<p>Now that installing AUR packages is a breeze for you, go check out the AUR and search for software that you&#39;ve always wanted to install on Linux. There&#39;s a good chance that it&#39;ll be available in the repository.</p>
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":4,"skipEvery":null,"nbrPlacementFilledEachSkip":4,"nbrPlacementsScanned":52,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":579} -->
+<p>Keep in mind that using the AUR also poses a security risk. Since anyone can add their PKGBUILD to the AUR, these installation scripts aren&#39;t often tested and reviewed properly. But that doesn&#39;t mean you should stop downloading packages from the AUR altogether.</p>
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":4,"skipEvery":null,"nbrPlacementFilledEachSkip":4,"nbrPlacementsScanned":53,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":848} -->
+<p>Instead, minimize the risk by reviewing the PKGBUILDs before installing the packages. Not only will this keep your system safe, but you&#39;ll also learn how packages in the AUR work.</p>
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":4,"skipEvery":null,"nbrPlacementFilledEachSkip":4,"nbrPlacementsScanned":54,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":1031} -->
+<div id="article-waypoint"></div>
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":4,"skipEvery":null,"nbrPlacementFilledEachSkip":4,"nbrPlacementsScanned":55,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":1031} --></section>
+
+<!-- No repeatable ad for zone: character count repeatable. --><!-- Repeatable debug data: {"adPosition":4,"skipEvery":null,"nbrPlacementFilledEachSkip":4,"nbrPlacementsScanned":56,"ruleCount":1050,"degradationStartingPoint":1,"actualCount":1031} -->
+        <footer class="article-footer">
+                                                                        
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+
+
+
+        <!-- No winning ad found for zone: above next button! -->
+                                                                    
+                    <div class="article-footer-newsletter">
+                <a href="/page/newsletter/"><span class="icon i-newsletter"></span>Subscribe to our newsletter</a>
+            </div>
+        
+                    <div class="sharing bottom">
+                                                    
+    <div class="w-btn-comments">
+        <div class="sharing-btn btn-comments disqus-load-btn" data-disqus-container="disqus_thread_2010565"
+             data-disqus-identifier="2010565" data-disqus-page-url="https://www.makeuseof.com/install-and-use-yay-arch-linux/"
+             data-disqus-page-title="How to Install and Use yay on Arch Linux">
+            <span class="icon i-comment"></span>
+            <span class="text">Comments</span>
+            <span class="text disqus-comment-count" data-disqus-identifier="2010565"></span>
+        </div>
+    </div>
+
+                                                                                                                
+
+    <a class="sharing-btn btn-facebook" target="_blank"
+       href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.makeuseof.com%2Finstall-and-use-yay-arch-linux%2F%2F&amp;src=sdkpreparse">
+        <span class="icon i-facebook"></span>
+        <span class="text">Share</span>
+    </a>
+    <a class="sharing-btn btn-twitter" target="_blank"
+       href="https://twitter.com/intent/tweet?text=How%20to%20Install%20and%20Use%20yay%20on%20Arch%20Linux&url=https%3A%2F%2Fwww.makeuseof.com%2Finstall-and-use-yay-arch-linux%2F">
+        <span class="icon i-twitter"></span>
+        <span class="text">Tweet</span>
+    </a>
+    <a class="sharing-btn btn-linkedIn" target="_blank"
+       href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.makeuseof.com%2Finstall-and-use-yay-arch-linux%2F&title=How%20to%20Install%20and%20Use%20yay%20on%20Arch%20Linux&source=www.makeuseof.com&summary=An%20AUR%20helper%20like%20yay%20lets%20you%20download%20and%20install%20packages%20from%20the%20Arch%20User%20Repository.%20Here%27s%20how%20to%20install%20yay%20on%20Arch%20Linux.">
+        <span class="icon i-linkedIn"></span>
+        <span class="text">Share</span>
+    </a>
+    <a class="sharing-btn btn-reddit" target="_blank"
+       href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.makeuseof.com%2Finstall-and-use-yay-arch-linux%2F">
+        <span class="icon i-reddit"></span>
+        <span class="text">Share</span>
+    </a>
+    <a class="sharing-btn btn-flipboard" target="_blank"
+       href="http://share.flipboard.com/bookmarklet/popout?v=2&title=How%20to%20Install%20and%20Use%20yay%20on%20Arch%20Linux&url=https%3A%2F%2Fwww.makeuseof.com%2Finstall-and-use-yay-arch-linux%2F&utm_campaign=tools&utm_medium=article-share&utm_source=www.makeuseof.com">
+        <span class="icon i-flipboard"></span>
+        <span class="text">Share</span>
+    </a>
+    <div class="copy-link-button">
+        <a class="sharing-btn btn-copy-url" href="javascript:;">
+            <span class="icon i-copy-url"></span>
+            <span class="text">Copy</span>
+        </a>
+    </div>
+    <a class="sharing-btn btn-mail"
+       href="mailto:?Subject=How to Install and Use yay on Arch Linux&Body=Check%20this%20out%21%0Ahttps%3A%2F%2Fhttps://www.makeuseof.com/install-and-use-yay-arch-linux/">
+        <span class="icon i-mail-1"></span>
+        <span class="text">Email</span>
+    </a>
+
+
+<div id="sharePopup" class="w-sharing-option">
+    <div class="sharing-option">
+        <div class="sharing-option-header">
+            <span>Share this article</span>
+            <div id="sharePopupCloseButton">
+                <button class="sharing-option-close-btn icon i-close" type="button"></button>
+            </div>
+        </div>
+        <div class="sharing-option-body">
+                            <a class="sharing-btn btn-facebook" target="_blank"
+                   href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.makeuseof.com%2Finstall-and-use-yay-arch-linux%2F%2F&amp;src=sdkpreparse">
+                    <span class="icon i-facebook"></span>
+                    <span class="text">Share</span>
+                </a>
+                                        <a class="sharing-btn btn-twitter" target="_blank"
+                   href="https://twitter.com/intent/tweet?text=How%20to%20Install%20and%20Use%20yay%20on%20Arch%20Linux&url=https%3A%2F%2Fwww.makeuseof.com%2Finstall-and-use-yay-arch-linux%2F">
+                    <span class="icon i-twitter"></span>
+                    <span class="text">Tweet</span>
+                </a>
+                                        <a class="sharing-btn btn-linkedIn" target="_blank"
+                   href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.makeuseof.com%2Finstall-and-use-yay-arch-linux%2F&title=How%20to%20Install%20and%20Use%20yay%20on%20Arch%20Linux&source=www.makeuseof.com&summary=An%20AUR%20helper%20like%20yay%20lets%20you%20download%20and%20install%20packages%20from%20the%20Arch%20User%20Repository.%20Here%27s%20how%20to%20install%20yay%20on%20Arch%20Linux.">
+                    <span class="icon i-linkedIn"></span>
+                    <span class="text">Share</span>
+                </a>
+                                        <a class="sharing-btn btn-reddit" target="_blank"
+                   href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.makeuseof.com%2Finstall-and-use-yay-arch-linux%2F">
+                    <span class="icon i-reddit"></span>
+                    <span class="text">Share</span>
+                </a>
+                                        <a class="sharing-btn btn-flipboard" target="_blank"
+                   href="http://share.flipboard.com/bookmarklet/popout?v=2&title=How%20to%20Install%20and%20Use%20yay%20on%20Arch%20Linux&url=https%3A%2F%2Fwww.makeuseof.com%2Finstall-and-use-yay-arch-linux%2F&utm_campaign=tools&utm_medium=article-share&utm_source=www.makeuseof.com">
+                    <span class="icon i-flipboard"></span>
+                    <span class="text">Share</span>
+                </a>
+                                        <div class="copy-link-button">
+                    <a class="sharing-btn btn-copy-url" href="javascript:;">
+                        <span class="icon i-copy-url"></span>
+                        <span class="text">Copy</span>
+                    </a>
+                </div>
+                                        <a class="sharing-btn btn-mail"
+                   href="mailto:?Subject=How to Install and Use yay on Arch Linux&Body=Check%20this%20out%21%0Ahttps%3A%2F%2Fhttps://www.makeuseof.com/install-and-use-yay-arch-linux/">
+                    <span class="icon i-mail-1"></span>
+                    <span class="text">Email</span>
+                </a>
+                    </div>
+    </div>
+</div>
+
+<div id="sharingCopyAlertDiv" class="w-sharing-copy">
+    <span>Link copied to clipboard</span>
+</div>
+
+
+            </div>
+                                    <div id="disqus_thread_2010565"></div>
+                        
+                                    
+                                <div class="article-tags">
+	<div class="section-sub-title">Related Topics</div>
+    <ul>
+                                    <li><a href="/category/linux/">Linux</a></li>
+                            <li><a href="/tag/package-managers/">Package Managers</a></li>
+                            <li><a href="/tag/arch-linux/">Arch Linux</a></li>
+                            <li><a href="/tag/install-software/">Install Software</a></li>
+                            <li><a href="/tag/linux-apps/">Linux Apps</a></li>
+                        </ul>
+</div>        <!-- No winning ad found for zone: below next button! -->
+        <!-- No winning ad found for zone: below sharing options! -->
+                    
+
+    <div class="w-article-author-bio-expand" id="w-article-author-bio-expand">
+        <div class="section-sub-title">About The Author</div>
+        
+                            
+<div class="w-article-author-bio ">
+
+    <div class="author-bio-infos">
+
+        <a href="/author/deepesh-sharma/" class="bio-title">Deepesh Sharma</a>
+
+                    <span class="bio-amount">(145 Articles Published)</span>
+        
+                    <div class="bio-social">
+
+                                    <a href="https://twitter.com/sharmadeepesh_" rel="nofollow"
+                       target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 338.39 277.15"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M1.86,246.51a166.34,166.34,0,0,0,24.25,0,136,136,0,0,0,26.38-4.71,141.61,141.61,0,0,0,39.78-18.06,69.13,69.13,0,0,0,9.25-7c-15.2-.74-28.59-5.14-40.27-13.89a69,69,0,0,1-24.73-34.55,69.28,69.28,0,0,0,30-1C66.47,166.1,34,156.53,21.14,133c-6.2-10.52-9-22-9.34-34.16-.06-1.79,1-.83,1.53-.54a69.39,69.39,0,0,0,21.75,7.16c2.45.4,5,.41,7.77.63C11.5,80.28,4.8,49.34,21.34,12.55c4.35,4.74,8.22,9.15,12.29,13.36A195.61,195.61,0,0,0,69.42,55a196.06,196.06,0,0,0,54.5,24.14,198.7,198.7,0,0,0,39.57,6.57c2.58.16,2.82-.79,2.46-2.91-4.49-26.48,3.38-48.84,23.47-66.38,14.1-12.31,31-17.51,49.83-16.23A67.66,67.66,0,0,1,284,20.45a3.9,3.9,0,0,0,4.15,1,139.16,139.16,0,0,0,38.16-14.4c.84-.48,1.76-.84,3.44-1.63a71.63,71.63,0,0,1-29.2,37.65c13-.94,25.27-4.69,37.89-9.78-1.64,3.77-3.92,6.25-5.95,8.77a131,131,0,0,1-25.5,24.72,5.29,5.29,0,0,0-2.39,5,194.71,194.71,0,0,1-6.7,56.78,208.6,208.6,0,0,1-36,73.41A190.72,190.72,0,0,1,217,244.37a183.21,183.21,0,0,1-42.5,21.34,206.72,206.72,0,0,1-43,9.92,215.22,215.22,0,0,1-41.92.9,191.37,191.37,0,0,1-51.82-11.22A201.19,201.19,0,0,1,1.21,247.65a9,9,0,0,1-1.21-1A2,2,0,0,1,1.86,246.51Z"/></g></g></svg></a>
+                
+                
+                
+                                    <a href="https://www.linkedin.com/in/sharma-deepesh/" rel="nofollow"
+                       target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 324.57 323.28"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M179.59,133.05c28.71-33,70-38.91,101.47-26.66,12.75,5.39,27.48,19.46,34.09,36.81,6,15.67,8.25,32,8.36,48.65.27,40.13.27,80.25,1.05,120.37.18,9.16-2.87,11.35-11.39,11l-47.75,0c-7.36,0-9.84-1.78-9.74-9.54.43-34.07.15-68.15.19-102.22a111.72,111.72,0,0,0-1.93-22.8c-3.28-15.91-12.14-24.75-26-26.54-23-3-33.8,4.48-40.52,19.75-2.85,6.47-4,13.37-4.34,20.43-1.89,36.6-1.2,73.23-.73,109.84.11,8.87-2.49,11.45-11.26,11.07-20.39,0-30.9-.08-48.71-.08-6.17.13-8.32-1.85-8.3-8.16q.26-99.83,0-199.67c0-6.6,2-8.79,8.73-8.79l48.72,0c6.32,0,8.13,2.41,8.13,8.32C179.68,120.16,179.59,125.49,179.59,133.05Z"/><path class="cls-1" d="M5.36,214.9c0-32.48.24-65-.16-97.46-.11-8.1,1.74-11,10.55-11,16.92,0,30,0,46.79,0,9.39,0,11.05,3.21,11,11.49-.3,46.82-.17,93.64-.13,140.46,0,18.47,0,36.95.35,55.41.15,6.9-1.93,9.6-9.25,9.39H13.87c-6.85.16-8.68-2.37-8.62-8.9C5.5,281.15,5.36,248,5.36,214.9Z"/><path class="cls-1" d="M78.64,39.63c-.07,22.37-16.83,39-39.31,39C17.72,78.68-.3,60.59,0,39.18A39.69,39.69,0,0,1,39.79,0C62,.11,78.72,17.2,78.64,39.63Z"/></g></g></svg></a>
+                
+                            </div>
+        
+    </div>
+
+    <div class="bio-desc">
+        <p>Deepesh has a degree in Computer Applications and has been writing about technology for over five years. When not penning down informational guides on Linux, Windows, or Gaming, you can find him secluded in a corner reading books, playing FPS games, or searching for new hobbies to take up, only to quit and find a new one again.</p>
+    </div>
+
+</div>
+
+        
+            </div>
+        
+        <!-- Zone: below the author. -->
+<!-- No ads allowed! -->
+
+        <div id="single-image-modal" class="gallery-lightbox" style="display: none">
+            <button class="lightbox__exit-btn icon i-close"><span class="txt">Close</span></button>
+            <div class="lightbox">
+                <div class="lightbox__swipper" id="swipper-main">
+                    <div class="swiper-wrapper" id="single-image-modal-container">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </footer>
+                    
+<aside id="secondary" class="sidebar adsninja-rail-container" role="complementary">
+
+    <!-- No winning ad found for zone: sidebar top! -->
+
+        <!-- No winning ad found for zone: first! -->
+
+    
+    
+            <article class="sidebar-trending">
+                            <!-- Zone: second. -->
+<!-- No ads allowed! -->
+                <!-- No winning ad found for zone: third! -->
+                    </article>
+
+        
+        
+                
+                                                                                                            <div class="section-header">
+                            <h3 class="section-title">trending now</h3>
+                        </div>
+                                <div class="sentinel-article-sidebarSticky browse-half clip-half">
+                                                                                                
+
+
+
+                                
+    
+
+
+
+    
+
+<article class="browse-clip  item-1 js-content" data-content-id="article:2002718">
+                <a class="bc-img-link" href="/how-to-fix-iphone-not-receiving-alerts/" >
+                            
+    
+    
+<div class="bc-img responsive-img img-sidebar-sticky">
+    <figure>
+        <picture>
+            <!--[if IE 9]>
+            <video style="display: none;"><![endif]-->
+                            <source media="(min-width: 1024px)"
+                        sizes="200px" data-srcset="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2021/09/not-getting-text-notifications-on-iphone-15-solutions.jpg?q=50&fit=crop&w=200&h=140&dpr=1.5"/>
+                            <source media="(min-width: 768px)"
+                        sizes="160px" data-srcset="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2021/09/not-getting-text-notifications-on-iphone-15-solutions.jpg?q=50&fit=crop&w=160&h=120&dpr=1.5"/>
+                            <source media="(min-width: 0px)"
+                        sizes="160px" data-srcset="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2021/09/not-getting-text-notifications-on-iphone-15-solutions.jpg?q=50&fit=crop&w=160&h=120&dpr=1.5"/>
+            
+            <!--[if IE 9]></video><![endif]-->
+                            <img width="1680" height="840" class="lazyload" alt="Photo of a person texting on the iPhone Messages app"/>
+                    </picture>
+            </figure>
+</div>
+
+                    </a>
+    
+    
+                    <div class="bc-info">
+        
+        
+                            
+                            
+                    <h3 class="bc-title">
+                                
+                                                    
+                                                                    <a href="/how-to-fix-iphone-not-receiving-alerts/" class="bc-title-link" title="How to Fix No Sound or Text Message Alerts on iPhone: 15+ Solutions" >How to Fix No Sound or Text Message Alerts on iPhone: 15+ Solutions</a>
+            </h3>
+        
+        
+        
+                    </div>
+        
+        
+        
+    
+</article>
+
+                                                                                            
+
+
+
+                                
+    
+
+
+
+    
+
+<article class="browse-clip  item-2 js-content" data-content-id="article:2007566">
+                <a class="bc-img-link" href="/windows-11-enable-hyper-v/" >
+                            
+    
+    
+<div class="bc-img responsive-img img-sidebar-sticky">
+    <figure>
+        <picture>
+            <!--[if IE 9]>
+            <video style="display: none;"><![endif]-->
+                            <source media="(min-width: 1024px)"
+                        sizes="200px" data-srcset="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/01/enable-hyper-v-windows-11.jpg?q=50&fit=crop&w=200&h=140&dpr=1.5"/>
+                            <source media="(min-width: 768px)"
+                        sizes="160px" data-srcset="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/01/enable-hyper-v-windows-11.jpg?q=50&fit=crop&w=160&h=120&dpr=1.5"/>
+                            <source media="(min-width: 0px)"
+                        sizes="160px" data-srcset="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/01/enable-hyper-v-windows-11.jpg?q=50&fit=crop&w=160&h=120&dpr=1.5"/>
+            
+            <!--[if IE 9]></video><![endif]-->
+                            <img width="1680" height="840" class="lazyload" alt="enable hyper v windows 11"/>
+                    </picture>
+            </figure>
+</div>
+
+                    </a>
+    
+    
+                    <div class="bc-info">
+        
+        
+                            
+                            
+                    <h3 class="bc-title">
+                                
+                                                    
+                                                                    <a href="/windows-11-enable-hyper-v/" class="bc-title-link" title="How to Enable Hyper-V in Windows 11" >How to Enable Hyper-V in Windows 11</a>
+            </h3>
+        
+        
+        
+                    </div>
+        
+        
+        
+    
+</article>
+
+                                                                                            
+
+
+
+                                
+                                
+    
+
+
+
+    
+
+<article class="browse-clip  item-3 js-content" data-content-id="article:107084">
+                <a class="bc-img-link" href="/tag/recover-facebook-account-longer-log/" >
+                            
+    
+    
+<div class="bc-img responsive-img img-sidebar-sticky">
+    <figure>
+        <picture>
+            <!--[if IE 9]>
+            <video style="display: none;"><![endif]-->
+                            <source media="(min-width: 1024px)"
+                        sizes="200px" data-srcset="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/07/facebook-logo-featured.jpg?q=50&fit=crop&w=200&h=140&dpr=1.5"/>
+                            <source media="(min-width: 768px)"
+                        sizes="160px" data-srcset="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/07/facebook-logo-featured.jpg?q=50&fit=crop&w=160&h=120&dpr=1.5"/>
+                            <source media="(min-width: 0px)"
+                        sizes="160px" data-srcset="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/07/facebook-logo-featured.jpg?q=50&fit=crop&w=160&h=120&dpr=1.5"/>
+            
+            <!--[if IE 9]></video><![endif]-->
+                            <img width="1680" height="840" class="lazyload" alt="Facebook logo"/>
+                    </picture>
+            </figure>
+</div>
+
+                    </a>
+    
+    
+                    <div class="bc-info">
+        
+        
+                            
+                            
+                    <h3 class="bc-title">
+                                
+                                                    
+                                                                    <a href="/tag/recover-facebook-account-longer-log/" class="bc-title-link" title="How to Recover Your Facebook Account When You Can&#039;t Log In" >How to Recover Your Facebook Account When You Can't Log In</a>
+            </h3>
+        
+        
+        
+                    </div>
+        
+        
+        
+    
+</article>
+
+                        </div>
+                                                                
+                <!-- Zone: infinite scroll rail. -->
+
+            <div class='adsninja-rail-zone adsninja-rail-zone-adsninja-ad-unit-infiniteScrollRail-636c27af884b3' id='adsninja-rail-zone-adsninja-ad-unit-infiniteScrollRail-636c27af884b3'>
+                <div class='adsninja-rail-zone-item adsninja-rail-zone-item-adsninja-ad-unit-infiniteScrollRail-636c27af884b3' id='adsninja-rail-zone-item-adsninja-ad-unit-infiniteScrollRail-636c27af884b3' style='margin-bottom: 200px'>
+                    <!-- No ads allowed! -->
+                </div>
+            </div>
+        
+    
+</aside>
+            </article>
+    
+    
+        </main>
+
+            
+    
+
+                
+
+            
+
+
+
+
+
+    
+
+
+     
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+            "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.makeuseof.com/install-and-use-yay-arch-linux/"
+        },
+            "headline": "How to Install and Use yay on Arch Linux",
+        "image":{
+            "@type": "ImageObject",
+            "url": "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/04/installing-yay-on-arch-linux.jpg",
+            "height":840,
+            "width":1680
+        },
+        "datePublished": "2022-04-18T18:00:14Z",
+        "dateModified": "2022-04-18T18:00:14Z",
+        "author": [
+                        
+            
+            
+                        {
+                            "@type": "Person",
+                            "@id" :  "https://www.makeuseof.com/author/deepesh-sharma/#author",
+                            "name": "Deepesh Sharma",
+                            "sameAs":[
+                                                            "https://www.makeuseof.com/author/deepesh-sharma/",
+                                                                                "https://twitter.com/sharmadeepesh_"
+                                                ]
+            }                    ],
+        "publisher": {
+            "@type": "Organization",
+            "@id": "https://www.makeuseof.com/#organization",
+            "name": "MUO",
+            "sameAs": [
+            "https://www.youtube.com/muotv",
+            "https://www.facebook.com/muo.official",
+            "https://www.instagram.com/muoofficial/",
+            "https://twitter.com/MUO_official",
+            "https://www.pinterest.com/muo_official/"    
+        ],
+
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.makeuseof.com/public/build/images/muo-amp-logo.png",
+                "height":101,
+                "width":202
+            }
+        },
+                "articleSection":["Linux","Package Managers","Arch Linux","Install Software","Linux Apps"],
+                                 "description": "An AUR helper like yay lets you download and install packages from the Arch User Repository. Here&#039;s how to install yay on Arch Linux.",
+        "isAccessibleForFree": "True",
+        "hasPart":[{"@type":"WebPageElement","isAccessibleForFree":"True","cssSelector":".article-body"}]
+                       }
+</script>
+
+        
+                    
+<!-- No winning ad found for zone: footer! -->
+
+<footer class="w-footer wrapper" aria-label="Footer">
+
+                
+        <div class="footer w-grid-system grid-c1">
+                        <nav class="menu-legal">
+        <ul>
+                                                                <li><a class="write" href="/contributor/">Write For Us</a></li>
+                                                                                <li><a class="menu-home" href="/">Home</a></li>
+                                                                                <li><a class="menu-contact-us" href="/contact/">Contact Us</a></li>
+                                                                                <li><a class="menu-terms" href="/terms-of-use/">Terms</a></li>
+                                                                                <li><a class="menu-privacy" href="/privacy-policy/">Privacy</a></li>
+                                                                                <li><a class="menu-copyright" href="/dmca-take-down-policy/">Copyright</a></li>
+                                                                                <li><a class="menu-about-us" href="/about/">About Us</a></li>
+                                                                                <li><a class="menu-fact-checking-policy" href="/fact-checking-policy/">Fact Checking Policy</a></li>
+                                                                                <li><a class="menu-corrections-policy" href="/corrections-policy/">Corrections Policy</a></li>
+                                                                                <li><a class="menu-ethics-policy" href="/ethics-policy/">Ethics Policy</a></li>
+                                                                                <li><a class="menu-ownership-policy" href="/ownership-funding-advertising-policy/">Ownership Policy</a></li>
+                                                                                <li><a class="menu-partnership-disclaimer" href="/partnership-disclaimer/">Partnership Disclaimer</a></li>
+                                                                                <li><a class="menu-official-giveaway-rules" href="/official-giveaway-rules/">Official Giveaway Rules</a></li>
+                                    </ul>
+    </nav>
+
+                <div id="ccpa-link"></div>
+        <div class="footer-copy">
+            Copyright &copy; 2022 www.makeuseof.com
+        </div>
+	</div>
+</footer>
+
+        
+
+        
+        <script>
+            window.disqusForumShortname = "makeuseof-1";
+                                                                    </script>
+        <noscript>
+            <a href="https://disqus.com/?ref_noscript" rel="nofollow"></a>
+        </noscript>
+                    <script src="/public/build/valnet-footer.3eea5221.js" async></script>
+    
+        <script src="/public/build/valnet-footer-article.ea6ec798.js" async></script>
+    
+    <script>
+                    var isPreview =  false
+                
+        window.articlePermalink = /install-and-use-yay-arch-linux/
+    </script>
+
+        <script>
+                                                    window.articleFetchAjaxUrl = "/fetch/next-article/what-is-aur-in-arch-linux/"
+                window.articleFetchCurrentPermalink = "/install-and-use-yay-arch-linux/"
+                window.articleFetchNextPermalink = "/what-is-aur-in-arch-linux/"
+                window.articleFetchExludeIds = "2010565,2007078"
+                window.articleFetchWaypointElement = document.getElementsByClassName('w-content')[0];
+                window.articleFetchMaximum = 6
+                        </script>
+
+                            <script type="text/javascript">
+                var vglnk = {key: 'eac202ea7a96cf485281d6c4ffa2069e'};
+                (function(d, t) {
+                    var s = d.createElement(t);
+                    s.type = 'text/javascript';
+                    s.async = true;
+                    s.src = '//cdn.viglink.com/api/vglnk.js';
+                    var r = d.getElementsByTagName(t)[0];
+                    r.parentNode.insertBefore(s, r);
+                }(document, 'script'));
+            </script>
+            
+        
+
+
+    
+    
+
+        <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var queryString = window.location.search || '';
+            var keyValPairs = [];
+            var params      = {};
+
+            queryString     = queryString.substr(1);
+            if (queryString.length)
+            {
+                keyValPairs = queryString.split('&');
+                for (var i = 0; i < keyValPairs.length; i++)
+                {
+                    var key = keyValPairs[i].split('=')[0];
+                    if (!key.length) continue;
+                    if (typeof params[key] === 'undefined')
+                        params[key] = [];
+                    params[key].push(keyValPairs[i].split('=')[1]);
+                }
+
+                if (params['view'] !== undefined) {
+                    if (params['view'] == "list" || params['view'] == "lista") {
+                        valnet_cookie.set("view",params['view']);
+                    }
+                }
+
+                var campaign = null;
+                if (params['utm_source'] !== undefined) {
+                    campaign = params['utm_source'];
+                }
+                if (campaign !== null) {
+                    valnet_cookie.set("campaign",campaign);
+                }
+            }
+        });
+    </script>
+
+                            <!-- Using AdsNinja V10 -->
+            <!-- Ad Footer Start -->
+            <!-- Chosen Ad Setup: Balance Content-All Desktop - Prebid. -->
+
+
+            <!-- Ad Footer End -->
+            
+
+                                                        
+    <script>
+
+        console.log('viewType: organic');
+        console.log('view: all');
+        console.log('campaign: ');
+        console.log('device: desktop');
+                console.log('displayStartButton:  false ');
+        
+    </script>
+
+            <script>
+            window.disqusEnable = true;
+            window.disqusForumShortname = "makeuseof-1"
+        </script>
+        
+        
+            
+
+    <!-- Zone: sticky footer. -->
+<!-- No ads allowed! -->
+ </body>
+</html>
+

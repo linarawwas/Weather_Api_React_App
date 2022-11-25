@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<application-state>
+  <context id="">
+    <application id="com.discordapp.Discord.desktop" score="256" last-seen="1669386821"/>
+    <application id="org.gnome.Nautilus.desktop" score="3" last-seen="1669290282"/>
+    <application id="org.gnome.Epiphany.desktop" score="826" last-seen="1669282790"/>
+    <application id="org.gnome.Shell.PortalHelper.desktop" score="6" last-seen="1669273483"/>
+    <application id="google-chrome.desktop" score="1903" last-seen="1669387379"/>
+    <application id="org.gnome.Console.desktop" score="1510" last-seen="1669387390"/>
+    <application id="org.gnome.Software.desktop" score="68" last-seen="1669320690"/>
+    <application id="org.gnome.Settings.desktop" score="558" last-seen="1669378267"/>
+  </context>
+</application-state>
