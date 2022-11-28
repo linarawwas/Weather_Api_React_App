@@ -67,4 +67,47 @@
       </metadata>
     </info>
   </bookmark>
+  <bookmark href="file:///home/lina/test/README.md" added="2022-11-28T00:35:17.883438Z" modified="2022-11-28T00:35:38.856482Z" visited="2022-11-28T00:35:17.883439Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/markdown"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=code --file-forwarding com.visualstudio.code --reuse-window @@ %F @@&apos;" modified="2022-11-28T00:35:38.856479Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/lina/markdown-cv/index.html" added="2022-11-28T00:38:21.275509Z" modified="2022-11-28T00:38:21.526435Z" visited="2022-11-28T00:38:21.275510Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gnome" exec="&apos;xdg-desktop-portal-gnome %u&apos;" modified="2022-11-28T00:38:21.275513Z" count="1"/>
+          <bookmark:application name="com.visualstudio.code" exec="&apos;gio open %u&apos;" modified="2022-11-28T00:38:21.526431Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/lina/markdown-cv/README.md" added="2022-11-28T00:38:52.836244Z" modified="2022-11-28T00:39:11.659353Z" visited="2022-11-28T00:38:52.836245Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/markdown"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gnome" exec="&apos;xdg-desktop-portal-gnome %u&apos;" modified="2022-11-28T00:38:52.836248Z" count="1"/>
+          <bookmark:application name="com.visualstudio.code" exec="&apos;gio open %u&apos;" modified="2022-11-28T00:38:53.087501Z" count="1"/>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=code --file-forwarding com.visualstudio.code --reuse-window @@ %F @@&apos;" modified="2022-11-28T00:39:11.659345Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/lina/Pictures/Screenshots/Screenshot%20from%202022-11-28%2001-48-55.png" added="2022-11-28T00:48:55.496501Z" modified="2022-11-28T00:48:55.496508Z" visited="2022-11-28T00:48:55.496501Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="gnome-shell" exec="&apos;gnome-shell %u&apos;" modified="2022-11-28T00:48:55.496503Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
 </xbel>

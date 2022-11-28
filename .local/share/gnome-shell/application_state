@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="com.discordapp.Discord.desktop" score="361" last-seen="1669594056"/>
-    <application id="org.gnome.Nautilus.desktop" score="18" last-seen="1669594158"/>
+    <application id="com.discordapp.Discord.desktop" score="361" last-seen="1669597051"/>
+    <application id="org.gnome.Nautilus.desktop" score="29" last-seen="1669595971"/>
     <application id="org.gnome.Epiphany.desktop" score="826" last-seen="1669282790"/>
     <application id="org.gnome.Shell.PortalHelper.desktop" score="6" last-seen="1669273483"/>
-    <application id="google-chrome.desktop" score="2564" last-seen="1669594139"/>
-    <application id="org.gnome.Console.desktop" score="1637" last-seen="1669593665"/>
+    <application id="google-chrome.desktop" score="2818" last-seen="1669597078"/>
+    <application id="org.gnome.Console.desktop" score="1737" last-seen="1669596918"/>
     <application id="org.gnome.Software.desktop" score="68" last-seen="1669320690"/>
-    <application id="com.visualstudio.code.desktop" score="105" last-seen="1669593110"/>
+    <application id="com.visualstudio.code.desktop" score="133" last-seen="1669597108"/>
     <application id="org.gnome.Settings.desktop" score="558" last-seen="1669378267"/>
-    <application id="xdg-desktop-portal-gnome.desktop" score="5" last-seen="1669592134"/>
+    <application id="xdg-desktop-portal-gnome.desktop" score="11" last-seen="1669595933"/>
   </context>
 </application-state>

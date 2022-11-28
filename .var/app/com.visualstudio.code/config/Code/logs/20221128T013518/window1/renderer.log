@@ -1,0 +1,2 @@
+2022-11-28 01:35:18.833 [info] Initial editor state {"filesToOpenOrCreate":[{"fileUri":{"$mid":1,"path":"/home/lina/test/README.md","scheme":"file"},"type":1,"exists":true,"options":{}}],"filesToDiff":[],"filesToMerge":[]}
+2022-11-28 01:35:21.819 [info] [perf] Render performance baseline is 30ms

@@ -1,0 +1,34 @@
+[Trace 00:36:42.147] VsCodeClientWorkspace: TextDocument.onDidOpen: file:///home/lina/myCV.md
+[Trace 00:36:42.148] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/lina/myCV.md
+[Trace 00:36:42.149] Server: connection.languages.diagnostics.on: file:///home/lina/myCV.md
+[Trace 00:36:42.149] Server: connection.languages.diagnostics.on: file:///home/lina/myCV.md
+[Debug 00:36:42.221] LinkProvider: compute - file:///home/lina/myCV.md
+[Trace 00:36:42.506] Server: connection.languages.diagnostics.on: file:///home/lina/myCV.md
+[Debug 00:36:43.668] MdFoldingProvider: provideFoldingRanges — file:///home/lina/myCV.md 1
+[Debug 00:36:43.668] TableOfContentsProvider: create - file:///home/lina/myCV.md
+[Trace 00:36:44.209] Server: connection.languages.diagnostics.on: file:///home/lina/myCV.md
+[Trace 00:36:44.619] DocumentSymbolProvider: provideDocumentSymbols — file:///home/lina/myCV.md 1
+[Trace 00:36:46.745] Server: connection.languages.diagnostics.on: file:///home/lina/myCV.md
+[Trace 00:36:46.746] VsCodeClientWorkspace: TextDocument.onDidClose: file:///home/lina/myCV.md
+[Trace 00:36:46.746] VsCodeClientWorkspace: deleteDocument: file:///home/lina/myCV.md
+[Trace 00:36:59.446] VsCodeClientWorkspace: TextDocument.onDidOpen: untitled:Untitled-1
+[Trace 00:36:59.447] VsCodeClientWorkspace: TextDocument.onDidChanceContent: untitled:Untitled-1
+[Trace 00:36:59.447] Server: connection.languages.diagnostics.on: untitled:Untitled-1
+[Debug 00:36:59.452] LinkProvider: compute - untitled:Untitled-1
+[Debug 00:36:59.643] MdFoldingProvider: provideFoldingRanges — untitled:Untitled-1 2
+[Debug 00:36:59.644] TableOfContentsProvider: create - untitled:Untitled-1
+[Trace 00:36:59.693] Server: connection.languages.diagnostics.on: untitled:Untitled-1
+[Trace 00:37:41.747] Server: connection.languages.diagnostics.on: untitled:Untitled-1
+[Trace 00:38:21.782] VsCodeClientWorkspace: TextDocument.onDidClose: untitled:Untitled-1
+[Trace 00:38:21.782] VsCodeClientWorkspace: deleteDocument: untitled:Untitled-1
+[Trace 00:38:21.783] Server: connection.languages.diagnostics.on: untitled:Untitled-1
+[Trace 00:38:53.202] VsCodeClientWorkspace: TextDocument.onDidOpen: file:///home/lina/markdown-cv/README.md
+[Trace 00:38:53.202] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/lina/markdown-cv/README.md
+[Trace 00:38:53.202] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/lina/markdown-cv/README.md
+[Trace 00:38:53.369] Server: connection.languages.diagnostics.on: file:///home/lina/markdown-cv/README.md
+[Trace 00:38:53.369] DocumentSymbolProvider: provideDocumentSymbols — file:///home/lina/markdown-cv/README.md 2
+[Debug 00:38:53.369] LinkProvider: compute - file:///home/lina/markdown-cv/README.md
+[Debug 00:38:53.372] TableOfContentsProvider: create - file:///home/lina/markdown-cv/README.md
+[Debug 00:38:53.658] MdFoldingProvider: provideFoldingRanges — file:///home/lina/markdown-cv/README.md 2
+[Trace 00:38:53.658] Server: connection.languages.diagnostics.on: file:///home/lina/markdown-cv/README.md
+[Trace 00:39:01.406] Server: connection.languages.diagnostics.on: file:///home/lina/markdown-cv/README.md

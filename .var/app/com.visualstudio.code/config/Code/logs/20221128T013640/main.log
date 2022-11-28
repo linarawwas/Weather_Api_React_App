@@ -1,0 +1,6 @@
+2022-11-28 01:36:40.776 [info] update#setState idle
+2022-11-28 01:36:41.367 [info] Starting extension host with pid 130 (fork() took 5 ms).
+2022-11-28 01:37:10.778 [info] update#setState checking for updates
+2022-11-28 01:37:10.891 [info] update#setState idle
+2022-11-28 01:39:04.955 [info] Waiting for extension host with pid 130 to exit.
+2022-11-28 01:39:04.998 [info] Extension host with pid 130 exited with code: 0, signal: null.

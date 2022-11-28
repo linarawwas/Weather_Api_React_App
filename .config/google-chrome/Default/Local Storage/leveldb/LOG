@@ -1,3 +1,15 @@
 2022/11/28-00:51:58.049 3 Reusing MANIFEST /home/lina/.config/google-chrome/Default/Local Storage/leveldb/MANIFEST-000001
 2022/11/28-00:51:58.050 3 Recovering log #56
 2022/11/28-00:51:58.050 3 Reusing old log /home/lina/.config/google-chrome/Default/Local Storage/leveldb/000056.log 
+2022/11/28-01:56:06.972 14 Level-0 table #60: started
+2022/11/28-01:56:06.978 14 Level-0 table #60: 21059 bytes OK
+2022/11/28-01:56:06.983 14 Delete type=0 #56
+2022/11/28-01:56:06.984 14 Compacting 4@0 + 1@1 files
+2022/11/28-01:56:07.002 14 Generated table #61@0: 676 keys, 867420 bytes
+2022/11/28-01:56:07.002 14 Compacted 4@0 + 1@1 files => 867420 bytes
+2022/11/28-01:56:07.007 14 compacted to: files[ 0 1 1 0 0 0 0 ]
+2022/11/28-01:56:07.008 14 Delete type=2 #55
+2022/11/28-01:56:07.008 14 Delete type=2 #57
+2022/11/28-01:56:07.008 14 Delete type=2 #60
+2022/11/28-01:56:07.008 14 Delete type=2 #52
+2022/11/28-01:56:07.008 14 Delete type=2 #49

@@ -1,0 +1,26 @@
+[Trace 00:35:20.104] VsCodeClientWorkspace: TextDocument.onDidOpen: file:///home/lina/test/README.md
+[Trace 00:35:20.105] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/lina/test/README.md
+[Trace 00:35:20.105] VsCodeClientWorkspace: TextDocument.onDidOpen: file:///home/lina/myCV.md
+[Trace 00:35:20.105] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/lina/myCV.md
+[Trace 00:35:20.106] Server: connection.languages.diagnostics.on: file:///home/lina/test/README.md
+[Trace 00:35:20.106] Server: connection.languages.diagnostics.on: file:///home/lina/myCV.md
+[Trace 00:35:20.106] Server: connection.languages.diagnostics.on: file:///home/lina/test/README.md
+[Trace 00:35:20.107] Server: connection.languages.diagnostics.on: file:///home/lina/myCV.md
+[Debug 00:35:20.126] LinkProvider: compute - file:///home/lina/test/README.md
+[Trace 00:35:20.538] Server: connection.languages.diagnostics.on: file:///home/lina/myCV.md
+[Trace 00:35:20.890] Server: connection.languages.diagnostics.on: file:///home/lina/test/README.md
+[Debug 00:35:21.609] MdFoldingProvider: provideFoldingRanges — file:///home/lina/test/README.md 1
+[Debug 00:35:21.610] TableOfContentsProvider: create - file:///home/lina/test/README.md
+[Trace 00:35:21.639] DocumentSymbolProvider: provideDocumentSymbols — file:///home/lina/test/README.md 1
+[Trace 00:35:21.752] Server: connection.languages.diagnostics.on: file:///home/lina/myCV.md
+[Trace 00:35:21.752] DocumentSymbolProvider: provideDocumentSymbols — file:///home/lina/myCV.md 1
+[Debug 00:35:21.752] LinkProvider: compute - file:///home/lina/myCV.md
+[Debug 00:35:21.755] TableOfContentsProvider: create - file:///home/lina/myCV.md
+[Debug 00:35:21.902] MdFoldingProvider: provideFoldingRanges — file:///home/lina/myCV.md 1
+[Trace 00:35:25.951] Server: connection.languages.diagnostics.on: file:///home/lina/test/README.md
+[Debug 00:35:26.131] MdFoldingProvider: provideFoldingRanges — file:///home/lina/test/README.md 1
+[Trace 00:35:26.161] Server: connection.languages.diagnostics.on: file:///home/lina/myCV.md
+[Trace 00:35:28.461] VsCodeClientWorkspace: TextDocument.onDidClose: file:///home/lina/test/README.md
+[Trace 00:35:28.461] VsCodeClientWorkspace: deleteDocument: file:///home/lina/test/README.md
+[Trace 00:35:28.461] Server: connection.languages.diagnostics.on: file:///home/lina/myCV.md
+[Debug 00:35:28.738] MdFoldingProvider: provideFoldingRanges — file:///home/lina/myCV.md 1
