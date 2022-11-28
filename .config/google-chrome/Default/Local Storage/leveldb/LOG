@@ -1,3 +1,6 @@
-2022/11/28-02:45:05.103 3 Reusing MANIFEST /home/lina/.config/google-chrome/Default/Local Storage/leveldb/MANIFEST-000001
-2022/11/28-02:45:05.104 3 Recovering log #59
-2022/11/28-02:45:05.104 3 Reusing old log /home/lina/.config/google-chrome/Default/Local Storage/leveldb/000059.log 
+2022/11/28-08:39:16.477 3 Reusing MANIFEST /home/lina/.config/google-chrome/Default/Local Storage/leveldb/MANIFEST-000001
+2022/11/28-08:39:16.478 3 Recovering log #59
+2022/11/28-08:39:16.479 3 Reusing old log /home/lina/.config/google-chrome/Default/Local Storage/leveldb/000059.log 
+2022/11/28-13:09:59.974 1c Level-0 table #64: started
+2022/11/28-13:10:00.013 1c Level-0 table #64: 15999 bytes OK
+2022/11/28-13:10:00.019 1c Delete type=0 #59

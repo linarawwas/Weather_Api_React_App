@@ -1,0 +1,9 @@
+[Trace 07:40:12.503] VsCodeClientWorkspace: TextDocument.onDidOpen: file:///home/lina/markdown-cv/README.md
+[Trace 07:40:12.504] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/lina/markdown-cv/README.md
+[Trace 07:40:12.506] Server: connection.languages.diagnostics.on: file:///home/lina/markdown-cv/README.md
+[Debug 07:40:12.562] LinkProvider: compute - file:///home/lina/markdown-cv/README.md
+[Trace 07:40:12.563] Server: connection.languages.diagnostics.on: file:///home/lina/markdown-cv/README.md
+[Trace 07:40:12.821] Server: connection.languages.diagnostics.on: file:///home/lina/markdown-cv/README.md
+[Debug 07:40:14.036] MdFoldingProvider: provideFoldingRanges — file:///home/lina/markdown-cv/README.md 1
+[Debug 07:40:14.037] TableOfContentsProvider: create - file:///home/lina/markdown-cv/README.md
+[Trace 07:40:14.968] DocumentSymbolProvider: provideDocumentSymbols — file:///home/lina/markdown-cv/README.md 1

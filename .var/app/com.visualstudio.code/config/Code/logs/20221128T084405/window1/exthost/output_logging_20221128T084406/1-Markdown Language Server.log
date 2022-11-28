@@ -1,0 +1,109 @@
+[Trace 07:44:06.525] VsCodeClientWorkspace: TextDocument.onDidOpen: file:///home/lina/markdown-cv/README.md
+[Trace 07:44:06.526] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/lina/markdown-cv/README.md
+[Trace 07:44:06.527] Server: connection.languages.diagnostics.on: file:///home/lina/markdown-cv/README.md
+[Trace 07:44:06.528] Server: connection.languages.diagnostics.on: file:///home/lina/markdown-cv/README.md
+[Debug 07:44:06.547] LinkProvider: compute - file:///home/lina/markdown-cv/README.md
+[Trace 07:44:06.815] Server: connection.languages.diagnostics.on: file:///home/lina/markdown-cv/README.md
+[Debug 07:44:08.035] MdFoldingProvider: provideFoldingRanges — file:///home/lina/markdown-cv/README.md 1
+[Debug 07:44:08.035] TableOfContentsProvider: create - file:///home/lina/markdown-cv/README.md
+[Trace 07:44:09.145] DocumentSymbolProvider: provideDocumentSymbols — file:///home/lina/markdown-cv/README.md 1
+[Trace 12:13:29.855] Server: connection.languages.diagnostics.on: file:///home/lina/markdown-cv/README.md
+[Trace 12:13:32.611] Server: connection.languages.diagnostics.on: file:///home/lina/markdown-cv/README.md
+[Trace 12:13:32.612] VsCodeClientWorkspace: TextDocument.onDidClose: file:///home/lina/markdown-cv/README.md
+[Trace 12:13:32.612] VsCodeClientWorkspace: deleteDocument: file:///home/lina/markdown-cv/README.md
+[Trace 12:13:32.925] VsCodeClientWorkspace: TextDocument.onDidOpen: file:///home/lina/markdown-cv/README.md
+[Trace 12:13:32.925] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/lina/markdown-cv/README.md
+[Trace 12:13:32.976] Server: connection.languages.diagnostics.on: file:///home/lina/markdown-cv/README.md
+[Trace 12:13:32.976] DocumentSymbolProvider: provideDocumentSymbols — file:///home/lina/markdown-cv/README.md 1
+[Debug 12:13:32.976] LinkProvider: compute - file:///home/lina/markdown-cv/README.md
+[Debug 12:13:32.978] TableOfContentsProvider: create - file:///home/lina/markdown-cv/README.md
+[Debug 12:13:33.157] MdFoldingProvider: provideFoldingRanges — file:///home/lina/markdown-cv/README.md 1
+[Trace 12:16:32.948] VsCodeClientWorkspace: TextDocument.onDidClose: file:///home/lina/markdown-cv/README.md
+[Trace 12:16:32.949] VsCodeClientWorkspace: deleteDocument: file:///home/lina/markdown-cv/README.md
+[Trace 14:00:10.195] VsCodeClientWorkspace: TextDocument.onDidOpen: untitled:Untitled-1
+[Trace 14:00:10.195] VsCodeClientWorkspace: TextDocument.onDidChanceContent: untitled:Untitled-1
+[Debug 14:00:10.196] LinkProvider: compute - untitled:Untitled-1
+[Trace 14:00:10.196] Server: connection.languages.diagnostics.on: untitled:Untitled-1
+[Debug 14:00:10.391] MdFoldingProvider: provideFoldingRanges — untitled:Untitled-1 195
+[Debug 14:00:10.392] TableOfContentsProvider: create - untitled:Untitled-1
+[Trace 14:00:10.457] Server: connection.languages.diagnostics.on: untitled:Untitled-1
+[Trace 14:00:14.155] Server: connection.languages.diagnostics.on: untitled:Untitled-1
+[Trace 14:00:16.227] VsCodeClientWorkspace: TextDocument.onDidChanceContent: untitled:Untitled-1
+[Trace 14:00:16.227] Server: connection.languages.diagnostics.on: untitled:Untitled-1
+[Debug 14:00:16.427] MdFoldingProvider: provideFoldingRanges — untitled:Untitled-1 196
+[Debug 14:00:16.427] TableOfContentsProvider: create - untitled:Untitled-1
+[Debug 14:00:16.477] LinkProvider: compute - untitled:Untitled-1
+[Trace 14:00:27.233] VsCodeClientWorkspace: TextDocument.onDidChanceContent: untitled:Untitled-1
+[Trace 14:00:27.234] Server: connection.languages.diagnostics.on: untitled:Untitled-1
+[Debug 14:00:27.427] MdFoldingProvider: provideFoldingRanges — untitled:Untitled-1 197
+[Debug 14:00:27.427] TableOfContentsProvider: create - untitled:Untitled-1
+[Debug 14:00:27.477] LinkProvider: compute - untitled:Untitled-1
+[Trace 14:00:30.983] VsCodeClientWorkspace: TextDocument.onDidChanceContent: untitled:Untitled-1
+[Trace 14:00:30.983] Server: connection.languages.diagnostics.on: untitled:Untitled-1
+[Debug 14:00:31.178] MdFoldingProvider: provideFoldingRanges — untitled:Untitled-1 198
+[Debug 14:00:31.179] TableOfContentsProvider: create - untitled:Untitled-1
+[Debug 14:00:31.254] LinkProvider: compute - untitled:Untitled-1
+[Trace 14:00:34.497] VsCodeClientWorkspace: TextDocument.onDidChanceContent: untitled:Untitled-1
+[Trace 14:00:34.498] Server: connection.languages.diagnostics.on: untitled:Untitled-1
+[Debug 14:00:34.689] MdFoldingProvider: provideFoldingRanges — untitled:Untitled-1 199
+[Debug 14:00:34.690] TableOfContentsProvider: create - untitled:Untitled-1
+[Debug 14:00:34.740] LinkProvider: compute - untitled:Untitled-1
+[Trace 14:00:39.398] VsCodeClientWorkspace: TextDocument.onDidChanceContent: untitled:Untitled-1
+[Trace 14:00:39.398] Server: connection.languages.diagnostics.on: untitled:Untitled-1
+[Debug 14:00:39.597] MdFoldingProvider: provideFoldingRanges — untitled:Untitled-1 200
+[Debug 14:00:39.597] TableOfContentsProvider: create - untitled:Untitled-1
+[Debug 14:00:39.647] LinkProvider: compute - untitled:Untitled-1
+[Trace 14:00:43.911] VsCodeClientWorkspace: TextDocument.onDidChanceContent: untitled:Untitled-1
+[Trace 14:00:43.911] Server: connection.languages.diagnostics.on: untitled:Untitled-1
+[Debug 14:00:44.108] MdFoldingProvider: provideFoldingRanges — untitled:Untitled-1 201
+[Debug 14:00:44.109] TableOfContentsProvider: create - untitled:Untitled-1
+[Trace 14:00:44.663] VsCodeClientWorkspace: TextDocument.onDidChanceContent: untitled:Untitled-1
+[Trace 14:00:44.664] Server: connection.languages.diagnostics.on: untitled:Untitled-1
+[Debug 14:00:44.855] MdFoldingProvider: provideFoldingRanges — untitled:Untitled-1 202
+[Debug 14:00:44.855] TableOfContentsProvider: create - untitled:Untitled-1
+[Debug 14:00:44.906] LinkProvider: compute - untitled:Untitled-1
+[Trace 14:00:45.487] VsCodeClientWorkspace: TextDocument.onDidChanceContent: untitled:Untitled-1
+[Trace 14:00:45.488] Server: connection.languages.diagnostics.on: untitled:Untitled-1
+[Debug 14:00:45.675] MdFoldingProvider: provideFoldingRanges — untitled:Untitled-1 203
+[Debug 14:00:45.675] TableOfContentsProvider: create - untitled:Untitled-1
+[Debug 14:00:45.726] LinkProvider: compute - untitled:Untitled-1
+[Trace 14:00:46.173] VsCodeClientWorkspace: TextDocument.onDidChanceContent: untitled:Untitled-1
+[Trace 14:00:46.174] Server: connection.languages.diagnostics.on: untitled:Untitled-1
+[Debug 14:00:46.368] MdFoldingProvider: provideFoldingRanges — untitled:Untitled-1 204
+[Debug 14:00:46.369] TableOfContentsProvider: create - untitled:Untitled-1
+[Debug 14:00:46.419] LinkProvider: compute - untitled:Untitled-1
+[Trace 14:00:55.051] VsCodeClientWorkspace: TextDocument.onDidChanceContent: untitled:Untitled-1
+[Trace 14:00:55.052] Server: connection.languages.diagnostics.on: untitled:Untitled-1
+[Debug 14:00:55.242] MdFoldingProvider: provideFoldingRanges — untitled:Untitled-1 205
+[Debug 14:00:55.242] TableOfContentsProvider: create - untitled:Untitled-1
+[Debug 14:00:55.293] LinkProvider: compute - untitled:Untitled-1
+[Trace 14:00:58.143] VsCodeClientWorkspace: TextDocument.onDidChanceContent: untitled:Untitled-1
+[Trace 14:00:58.143] Server: connection.languages.diagnostics.on: untitled:Untitled-1
+[Debug 14:00:58.332] MdFoldingProvider: provideFoldingRanges — untitled:Untitled-1 206
+[Debug 14:00:58.332] TableOfContentsProvider: create - untitled:Untitled-1
+[Debug 14:00:58.383] LinkProvider: compute - untitled:Untitled-1
+[Trace 14:01:00.604] VsCodeClientWorkspace: TextDocument.onDidChanceContent: untitled:Untitled-1
+[Trace 14:01:00.605] Server: connection.languages.diagnostics.on: untitled:Untitled-1
+[Debug 14:01:00.804] MdFoldingProvider: provideFoldingRanges — untitled:Untitled-1 207
+[Debug 14:01:00.804] TableOfContentsProvider: create - untitled:Untitled-1
+[Debug 14:01:00.854] LinkProvider: compute - untitled:Untitled-1
+[Trace 14:01:02.594] VsCodeClientWorkspace: TextDocument.onDidChanceContent: untitled:Untitled-1
+[Trace 14:01:02.594] Server: connection.languages.diagnostics.on: untitled:Untitled-1
+[Debug 14:01:02.791] MdFoldingProvider: provideFoldingRanges — untitled:Untitled-1 208
+[Debug 14:01:02.792] TableOfContentsProvider: create - untitled:Untitled-1
+[Debug 14:01:02.842] LinkProvider: compute - untitled:Untitled-1
+[Trace 14:01:46.120] VsCodeClientWorkspace: TextDocument.onDidChanceContent: untitled:Untitled-1
+[Trace 14:01:46.121] Server: connection.languages.diagnostics.on: untitled:Untitled-1
+[Debug 14:01:46.312] MdFoldingProvider: provideFoldingRanges — untitled:Untitled-1 209
+[Debug 14:01:46.312] TableOfContentsProvider: create - untitled:Untitled-1
+[Debug 14:01:47.115] LinkProvider: compute - untitled:Untitled-1
+[Trace 14:02:38.916] VsCodeClientWorkspace: TextDocument.onDidChanceContent: untitled:Untitled-1
+[Trace 14:02:38.916] Server: connection.languages.diagnostics.on: untitled:Untitled-1
+[Debug 14:02:39.112] MdFoldingProvider: provideFoldingRanges — untitled:Untitled-1 210
+[Debug 14:02:39.112] TableOfContentsProvider: create - untitled:Untitled-1
+[Debug 14:02:39.162] LinkProvider: compute - untitled:Untitled-1
+[Trace 14:02:39.908] VsCodeClientWorkspace: TextDocument.onDidChanceContent: untitled:Untitled-1
+[Trace 14:02:39.908] Server: connection.languages.diagnostics.on: untitled:Untitled-1
+[Debug 14:02:40.107] MdFoldingProvider: provideFoldingRanges — untitled:Untitled-1 211
+[Debug 14:02:40.107] TableOfContentsProvider: create - untitled:Untitled-1
+[Debug 14:02:40.911] LinkProvider: compute - untitled:Untitled-1

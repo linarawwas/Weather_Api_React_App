@@ -130,4 +130,14 @@
       </metadata>
     </info>
   </bookmark>
+  <bookmark href="file:///home/lina/Downloads/89158986.jpeg" added="2022-11-28T07:48:36.483780Z" modified="2022-11-28T07:49:26.043209Z" visited="2022-11-28T07:48:36.483781Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gnome" exec="&apos;xdg-desktop-portal-gnome %u&apos;" modified="2022-11-28T07:49:26.043205Z" count="6"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
 </xbel>

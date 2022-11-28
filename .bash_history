@@ -216,3 +216,15 @@ git --version
 git config user.name
 git config user.email
 git push -u origin main
+cd home
+cd home/
+cd Home/
+git init
+git add README.md
+git commit "markdown-cv"
+cd home/
+cd Home
+cd Home
+cd markdown-cv
+code.
+git config --global user.email

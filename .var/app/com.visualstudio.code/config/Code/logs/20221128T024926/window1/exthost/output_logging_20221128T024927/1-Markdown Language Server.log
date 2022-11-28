@@ -7,3 +7,19 @@
 [Debug 01:49:29.108] MdFoldingProvider: provideFoldingRanges — file:///home/lina/markdown-cv/README.md 1
 [Debug 01:49:29.108] TableOfContentsProvider: create - file:///home/lina/markdown-cv/README.md
 [Trace 01:49:30.242] DocumentSymbolProvider: provideDocumentSymbols — file:///home/lina/markdown-cv/README.md 1
+[Trace 01:52:05.568] Server: connection.languages.diagnostics.on: file:///home/lina/markdown-cv/README.md
+[Trace 01:52:05.827] Server: connection.languages.diagnostics.on: file:///home/lina/markdown-cv/README.md
+[Trace 01:52:11.668] Server: connection.languages.diagnostics.on: file:///home/lina/markdown-cv/README.md
+[Trace 01:52:14.319] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/lina/markdown-cv/README.md
+[Trace 01:52:14.319] Server: connection.languages.diagnostics.on: file:///home/lina/markdown-cv/README.md
+[Debug 01:52:14.510] MdFoldingProvider: provideFoldingRanges — file:///home/lina/markdown-cv/README.md 2
+[Debug 01:52:14.510] TableOfContentsProvider: create - file:///home/lina/markdown-cv/README.md
+[Debug 01:52:14.564] LinkProvider: compute - file:///home/lina/markdown-cv/README.md
+[Trace 01:52:14.660] DocumentSymbolProvider: provideDocumentSymbols — file:///home/lina/markdown-cv/README.md 2
+[Trace 01:52:16.039] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/lina/markdown-cv/README.md
+[Trace 01:52:16.039] Server: connection.languages.diagnostics.on: file:///home/lina/markdown-cv/README.md
+[Debug 01:52:16.237] MdFoldingProvider: provideFoldingRanges — file:///home/lina/markdown-cv/README.md 3
+[Debug 01:52:16.238] TableOfContentsProvider: create - file:///home/lina/markdown-cv/README.md
+[Debug 01:52:16.289] LinkProvider: compute - file:///home/lina/markdown-cv/README.md
+[Trace 01:52:16.388] DocumentSymbolProvider: provideDocumentSymbols — file:///home/lina/markdown-cv/README.md 3
+[Trace 01:55:47.189] Server: connection.languages.diagnostics.on: file:///home/lina/markdown-cv/README.md

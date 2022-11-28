@@ -1,0 +1,112 @@
+cd location
+change directory to location
+pwd
+tell me where i am or in while folder
+ls
+list my folders local
+git init
+initialize an enviremonet for my code
+
+git status= inorder to see if 
+u
+ is untracked file
+ git add index.html
+ git status
+ now no commit yet but a new gile is affed which is indec.html
+ git config --global user.name username
+ git config --global user.email useremail 
+  uou do it once because it is global
+  now we can commit
+  git commit
+  git log 
+  tell me what i gad
+  init, add, commut, before that i added a config to my git
+  config can be used locally
+  you are not able to push without comiting
+  commit is to save our changes
+  git add first to inform the git that i added this file
+  i copy all these cahnges to m git
+  this all is work on my pc
+  till now i didnt push anything to the repositoey
+  locally and online
+  remote repository is also saved online, via a gidden file called .git
+  i will be sharing my data with remote repository
+  git doesn't have any user interface
+  it aonlu has a terminal
+  repository is an online folder or filesm we either pill of=r push from them
+  u is untracked file
+  this is before adding by git add
+  after i git add
+   the git status
+   there will he a notice that it was modiefied
+   hit  status
+   git log =now gives me the commits i had done
+   in order to push my code on gitgib
+   i makw a repositoru on gitjub:
+   i have a new repo
+   but it's emptu
+   what do i do
+   i got to vs code
+   git pus
+   we will not be able to push without specidtuomg the location i want to push to
+   i need the destination
+   i need to use git remoter aadd  anem url
+   git remote add origin url or my repository when i create it
+   now i write
+   git push
+   i will not be able to push
+   i need to set upstream
+   git push --set-upstream origin master
+   
+   we stil  nes=ed to authenticate our github
+   
+   by defeault , we have a master to all the branches
+   git add .
+   git commit "third commit"
+    and now git com
+   mit -m commit
+    git push
+    j now it will push
+    for the personal problems we 
+    mkdir: make a folder
+    toych is make a file a code file
+    
+    cloning isit is like a copy paster strategt'wiwe have ability to copy a repository on you ;aptop called fork
+    i copy the codae on my ,achine 
+    if i pushed, the original file will be changed
+    but the fork only cahnges yours and createsa  new repository if you pusg
+    vranchas allow you to work on the same oce but on different feautures on the same file
+    
+    
+    set upstresm is replaced with -u
+    i want to create another  bramcj
+    git btanch freature1
+    git br
+    fearture1
+    git checkout feature1
+    it will switched to freature1
+    i will gecome on fearue1
+    git branch displays the featue i am working on
+    i want to do
+    git add .
+    git commit
+    git status
+    git push
+    i didn't
+    git branch f1
+    git branch
+    gir checkout f1
+    or git chechout -b f1 (so 0b is make anew branch and check it ouut)
+    gir branch -a it shows me what i had pushed out of my branches
+    if i want to add anything else to the code
+    but i didnt commit yet or add anything
+    git diff
+    it will show all the modifications to the file
+    
+     it tells you small modificatoins on your code
+     first brabcg ut
+     secibd cgecjiyt'now 
+     add .
+      git commit -m
+      
+    
