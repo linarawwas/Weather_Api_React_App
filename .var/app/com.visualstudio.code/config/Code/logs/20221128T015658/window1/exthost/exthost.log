@@ -25,3 +25,9 @@
 2022-11-28 02:14:07.716 [warning] [Decorations] CAPPING events from decorations provider vscode.git 3812
 2022-11-28 02:14:34.047 [warning] [Decorations] CAPPING events from decorations provider vscode.git 3817
 2022-11-28 02:14:52.263 [warning] [Decorations] CAPPING events from decorations provider vscode.git 3817
+2022-11-28 02:14:58.224 [warning] [Decorations] CAPPING events from decorations provider vscode.git 3817
+2022-11-28 02:21:18.208 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2022-11-28 02:21:18.208 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2022-11-28 02:21:18.208 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2022-11-28 02:40:21.659 [info] Extension host terminating: received terminate message from renderer
+2022-11-28 02:40:21.675 [info] Extension host with pid 145 exiting with code 0

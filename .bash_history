@@ -184,3 +184,35 @@ sudo which git
 sudo pacman -
 sudo pacman -S
 reboot
+git init -b main
+git add
+git add
+git init
+git add .
+git commit -am 'test'
+git remote add origin https://github.com/linarawwas/markdown-cv.git 
+git push -u origin main 
+git push -u origin main
+[200~echo "# markdown-cv" >> README.md~
+echo "# markdown-cv" >> README.md
+git init
+git add README.md
+git commit -m 'languages: english: fluent, arabic: native'
+git branch -M main
+git remote add origin git@github.com:linarawwas/markdown-cv.git
+git push -u origin main
+git push -u origin main
+git push -u origin main
+git push -u origin main
+git push -u origin main
+linarawas
+git push -u origin main
+git push -u origin main
+git push -u origin main
+lina
+lina
+git push -u origin main
+git --version
+git config user.name
+git config user.email
+git push -u origin main

@@ -2,3 +2,5 @@
 2022-11-28 01:56:59.654 [info] Starting extension host with pid 145 (fork() took 6 ms).
 2022-11-28 01:57:28.928 [info] update#setState checking for updates
 2022-11-28 01:57:29.032 [info] update#setState idle
+2022-11-28 02:40:21.682 [info] Extension host with pid 145 exited with code: 0, signal: null.
+2022-11-28 02:40:21.710 [error] Blocked vscode-file request vscode-file://vscode-app/app/extra/vscode/resources/app/out/vs/base/worker/workerMain.js#editorWorkerService

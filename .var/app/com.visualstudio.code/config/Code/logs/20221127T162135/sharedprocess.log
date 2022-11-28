@@ -1,3 +1,0 @@
-2022-11-27 16:21:36.672 [info] Starting worker process with pid 222 (type: fileWatcher, window: 1).
-2022-11-27 16:21:36.673 [info] Starting worker process with pid 223 (type: fileWatcher, window: 2).
-2022-11-27 16:21:49.751 [info] Worker process with pid 222 terminated normally (type: fileWatcher, window: 1).

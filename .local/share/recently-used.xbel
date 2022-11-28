@@ -110,4 +110,24 @@
       </metadata>
     </info>
   </bookmark>
+  <bookmark href="file:///home/lina/Pictures/Screenshots/Screenshot%20from%202022-11-28%2002-21-47.png" added="2022-11-28T01:21:47.105178Z" modified="2022-11-28T01:21:47.105181Z" visited="2022-11-28T01:21:47.105178Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="gnome-shell" exec="&apos;gnome-shell %u&apos;" modified="2022-11-28T01:21:47.105179Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/lina/Pictures/Screenshots/Screenshot%20from%202022-11-28%2002-26-17.png" added="2022-11-28T01:26:17.387892Z" modified="2022-11-28T01:26:17.387895Z" visited="2022-11-28T01:26:17.387893Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="gnome-shell" exec="&apos;gnome-shell %u&apos;" modified="2022-11-28T01:26:17.387894Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
 </xbel>
