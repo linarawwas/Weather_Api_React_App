@@ -1,0 +1,6 @@
+2022/11/27-16:09:48.310 630 Creating DB /home/lina/.config/google-chrome/Default/IndexedDB/https_hackernoon.com_0.indexeddb.leveldb since it was missing.
+2022/11/27-16:09:48.318 630 Reusing MANIFEST /home/lina/.config/google-chrome/Default/IndexedDB/https_hackernoon.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/11/27-16:13:03.849 844 Level-0 table #5: started
+2022/11/27-16:13:03.853 844 Level-0 table #5: 560 bytes OK
+2022/11/27-16:13:03.858 844 Delete type=0 #3
+2022/11/27-16:13:03.858 844 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)

@@ -807,3 +807,23 @@
 [Modules] Host is up to date.
 [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
 [Modules] No module updates available.
+[Modules] Host is up to date.
+[Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+[Modules] No module updates available.
+[Modules] Modules initializing
+[Modules] Distribution: remote
+[Modules] Host updates: disabled
+[Modules] Module updates: enabled
+[Modules] Module install path: /home/lina/.var/app/com.discordapp.Discord/config/discord/0.0.21/modules
+[Modules] Module installed file path: /home/lina/.var/app/com.discordapp.Discord/config/discord/0.0.21/modules/installed.json
+[Modules] Module download path: /home/lina/.var/app/com.discordapp.Discord/config/discord/0.0.21/modules/pending
+[Modules] No updates to install
+[Modules] Host is up to date.
+[Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+[Modules] No module updates available.
+[Modules] Host is up to date.
+[Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+[Modules] No module updates available.
+[Modules] Host is up to date.
+[Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+[Modules] No module updates available.

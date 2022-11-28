@@ -1,2 +1,3 @@
-2022/11/24-19:56:02.614 bd Creating DB /home/lina/.var/app/com.discordapp.Discord/config/discord/shared_proto_db since it was missing.
-2022/11/24-19:56:02.621 bd Reusing MANIFEST /home/lina/.var/app/com.discordapp.Discord/config/discord/shared_proto_db/MANIFEST-000001
+2022/11/28-01:04:50.874 28 Reusing MANIFEST /home/lina/.var/app/com.discordapp.Discord/config/discord/shared_proto_db/MANIFEST-000001
+2022/11/28-01:04:50.874 28 Recovering log #3
+2022/11/28-01:04:50.874 28 Reusing old log /home/lina/.var/app/com.discordapp.Discord/config/discord/shared_proto_db/000003.log 

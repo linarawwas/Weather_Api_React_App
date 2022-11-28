@@ -1,0 +1,2 @@
+2022-11-25 15:53:19.651 [info] Initial editor state {"filesToOpenOrCreate":[{"fileUri":{"$mid":1,"path":"/home/lina/index.html","scheme":"file"},"type":1,"exists":true,"options":{}},{"fileUri":{"$mid":1,"path":"/app/share/vscode/flatpak-warning.txt","scheme":"file"},"type":1,"exists":true,"options":{}}],"filesToDiff":[],"filesToMerge":[]}
+2022-11-25 15:53:22.867 [info] [perf] Render performance baseline is 32ms

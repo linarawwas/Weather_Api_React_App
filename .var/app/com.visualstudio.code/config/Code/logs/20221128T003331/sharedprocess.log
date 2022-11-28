@@ -1,0 +1,7 @@
+2022-11-28 00:33:32.353 [info] Starting worker process with pid 193 (type: fileWatcher, window: 1).
+2022-11-28 00:34:15.576 [info] Getting Manifest... hnw.vscode-auto-open-markdown-preview
+2022-11-28 00:34:15.581 [info] Installing extension: hnw.vscode-auto-open-markdown-preview
+2022-11-28 00:34:17.430 [info] Extracted extension to /home/lina/.var/app/com.visualstudio.code/data/vscode/extensions/.97fdaa97-549e-49c8-a12b-673f909db2a9: hnw.vscode-auto-open-markdown-preview
+2022-11-28 00:34:17.434 [info] Renamed to /home/lina/.var/app/com.visualstudio.code/data/vscode/extensions/hnw.vscode-auto-open-markdown-preview-0.0.4
+2022-11-28 00:34:17.436 [info] Extracting completed. hnw.vscode-auto-open-markdown-preview
+2022-11-28 00:34:17.437 [info] Extension installed successfully: hnw.vscode-auto-open-markdown-preview

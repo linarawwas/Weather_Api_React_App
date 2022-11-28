@@ -1,9 +1,9 @@
 {
-  "IS_MAXIMIZED": false,
+  "IS_MAXIMIZED": true,
   "IS_MINIMIZED": false,
   "WINDOW_BOUNDS": {
-    "x": 435,
-    "y": 99,
+    "x": 460,
+    "y": 199,
     "width": 1280,
     "height": 720
   },

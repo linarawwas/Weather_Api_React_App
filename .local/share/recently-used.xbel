@@ -2,4 +2,69 @@
 <xbel version="1.0"
       xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
       xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
-></xbel>
+>
+  <bookmark href="file:///home/lina/myCV.md" added="2022-11-27T23:35:34.282488Z" modified="2022-11-27T23:35:34.533275Z" visited="2022-11-27T23:35:34.282489Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gnome" exec="&apos;xdg-desktop-portal-gnome %u&apos;" modified="2022-11-27T23:35:34.282491Z" count="1"/>
+          <bookmark:application name="com.visualstudio.code" exec="&apos;gio open %u&apos;" modified="2022-11-27T23:35:34.533272Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/lina/Downloads/resume-template-1.jpg" added="2022-11-27T23:39:11.534183Z" modified="2022-11-27T23:39:11.782804Z" visited="2022-11-27T23:39:11.534183Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gnome" exec="&apos;gio open %u&apos;" modified="2022-11-27T23:39:11.782801Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/lina/Downloads/Multimedia-Media-CV-Template.png" added="2022-11-27T23:39:48.973633Z" modified="2022-11-27T23:42:25.126284Z" visited="2022-11-27T23:39:48.973634Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gnome" exec="&apos;gio open %u&apos;" modified="2022-11-27T23:39:49.221454Z" count="2"/>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;/usr/bin/google-chrome-stable %U&apos;" modified="2022-11-27T23:42:25.126276Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/lina/Pictures/Screenshots/Screenshot%20from%202022-11-28%2000-40-29.png" added="2022-11-27T23:40:29.623652Z" modified="2022-11-27T23:48:54.864103Z" visited="2022-11-27T23:40:29.623653Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="gnome-shell" exec="&apos;gnome-shell %u&apos;" modified="2022-11-27T23:40:29.623655Z" count="1"/>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;/usr/bin/google-chrome-stable %U&apos;" modified="2022-11-27T23:48:54.864099Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/lina/Pictures/Screenshots/Screenshot%20from%202022-11-28%2000-40-44.png" added="2022-11-27T23:40:44.372449Z" modified="2022-11-27T23:47:03.307818Z" visited="2022-11-27T23:40:44.372450Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="gnome-shell" exec="&apos;gnome-shell %u&apos;" modified="2022-11-27T23:40:44.372451Z" count="1"/>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;/usr/bin/google-chrome-stable %U&apos;" modified="2022-11-27T23:47:03.307816Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/lina/test" added="2022-11-28T00:09:12.260923Z" modified="2022-11-28T00:09:12.260932Z" visited="2022-11-28T00:09:12.260924Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2022-11-28T00:09:12.260927Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>
