@@ -1,0 +1,88 @@
+*{
+  background-color: black;
+  color:white;
+  margin:0 auto;
+}
+.App{
+  width:70%;
+  margin:0 auto;
+  font-size: 2rem;
+}
+.appHeader{
+  background-color: rgb(41, 118, 242);
+  height:7rem;
+  display:flex;
+  flex-flow:row wrap;
+justify-content: flex-start;
+  align-items: center;
+  padding:1rem;
+}
+.body{
+  background-color: rgb(120, 191, 196);
+  display:flex;
+  flex-flow:column wrap;
+  padding:3rem;
+}
+.body p, .body h3, .body .strong{
+  background-color: rgb(120, 191, 196);
+  padding:1rem;
+  font-size: 30px;
+}
+.body p, .body span{
+  color:black;
+}
+.strong{
+  font-weight: bold;
+}
+img{
+  width:10rem;
+  background-color: rgb(120, 191, 196);
+}
+input, button{
+border-width:0;
+margin:0;
+padding:0.8rem;
+}
+::placeholder{
+  color:white;
+  font-size:2rem;
+}
+input{
+  background-color: rgb(41, 118, 242);
+  flex-basis:3rem;
+  font-size:1.5rem;
+  width: 47vw;
+}
+button{
+  background-color: rgb(34, 82, 158);
+  color:black;
+  flex-basis:13rem;
+  font-size:1.2rem;
+}
+.body div{
+  display:flex;
+  flex-flow:row wrap;
+  background-color: rgb(120, 191, 196);
+  flex-basis:3rem;
+}
+.tempInOneHour{
+  display:flex;
+  flex-flow:column wrap;
+  flex-basis:2rem;
+  padding:1rem;
+}
+.footer{
+  display: flex;
+  flex-flow:row wrap;
+  background-color: rgb(120, 191, 196);
+padding:6rem;
+}
+.footer div p, .footer div{
+  background-color: rgb(120, 191, 196);
+  padding:0.5rem;
+  font-size:20px;
+  color:black;
+}
+.footer img{
+  width:6rem;
+}
